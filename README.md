@@ -16,4 +16,7 @@ For deployment you will want to use a web server that is routable for all your t
 4. Edit the db.php file in the live section to match your credentials for the database. You could also elect to use server/environment variables as per the dev example if you wish.
 5. Access http://server/admin and sign up, verify your account and then log in.
 
-From here you can create your payloads, track your results and report on them.
+From here you can create your payloads, track your results and report on them. Note, we will periodically enhance the tool and we do accept changes - pull requests ahoy!
+
+## CTF Solutions
+The SEC567 class includes a reconnaissance, scanning and information re-use CTF. The solutions guide to the CTF for students that wish to continue working on the CTF after they have left the class is provided in the CTF folder. It is password protected and your instructor will provide you with the credentials to extract the archive. Please do not publish the solution and ruin the CTF for other students that may be having fun solving the challenge.
