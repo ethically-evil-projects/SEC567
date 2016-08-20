@@ -1,0 +1,135 @@
+/*
+ TO BE REMOVED ONCE CONVERTED TO SCSS
+/*
+
+
+/*
+http://cdn.tutsplus.com/webdesign/uploads/legacy/tuts/217_admin_bar/adminzone42_bar/demo2.html
+tooltip taking from above,
+*/
+a.tooltip::before {
+  content: attr(data-tip) ;
+
+  font-size: 10px;
+  position:absolute;
+  z-index: 999;
+  white-space:nowrap;
+  bottom:9999px;
+  left: 50%;
+  background:#000;
+  color:#e0e0e0;
+  padding:0px 7px;
+  line-height: 24px;
+  height: 24px;
+
+  opacity: 0;
+  transition:opacity 0.4s ease-out;
+}
+
+a.tooltip:hover::before {
+  opacity: 1;
+  bottom:-35px;
+}
+
+/*Hidden class used for additional table*/
+.hidden {
+  display: none!important;
+}
+.table .payload, .table .extra, .table .extraDataExpanded {
+  color: #7595B8;
+}
+
+.extraDataExpanded select {
+  color:#7595B8;
+  background-color: #24425C;
+}
+.extraDataExpanded option {
+  color: #7595B8;
+}
+
+#codeForm .btn {
+  height:98px;
+}
+
+#groupInput {
+  border-bottom: 1px solid #24425C;
+}
+
+.expanderArrow {
+  position: absolute;
+}
+
+
+.extraDataExpanded div{
+  margin-bottom: 10px;
+}
+
+.extraDataExpanded label{
+  float:left;
+  margin:0 10px 10px 0;
+  clear:both;
+}
+.loginForm {
+  text-align: center;
+}
+
+.loginForm p{
+    color:#7595B8;
+}
+
+.loginForm div{
+  margin-bottom: 10px;
+}
+
+.loginForm label{
+  float:left;
+  margin:0 10px 10px 0;
+  clear:both;
+}
+
+.loginForm input:not([type=submit]) {
+    color:#7595B8;
+    width: 60%;
+    background-color: #24425C;
+    padding: 15px 10px 15px 5px;
+    margin-right: 10px;
+    border: solid 1px #2E5171;
+}
+
+.loginForm input[type=submit]{
+  float: right;
+  margin-right: 120px;
+}
+
+.loginForm label {
+    color: #7595B8;
+}
+
+.message-error ul li {
+  list-style-type: none;
+}
+
+.extraDataExpanded select, .extaDataExpanded .baseurl {
+  margin-bottom: 20px!important;
+}
+
+.extraDataExpanded h3 {
+  color: #7595B8;
+  font-weight: bold;
+}
+
+.extraDataExpanded li {
+  color: #7595B8;
+}
+
+.download p {
+  text-align: center;
+}
+
+.table .payload {
+    width: 10%;
+}
+pre {
+  font-size: 11px;
+  text-align: center;
+}

@@ -1,0 +1,39 @@
+
+/* ----- STRUCTURE.scss ----- */
+
+// Set max width.
+$max-width: 900px;
+
+// HTML, body.
+html,
+body {
+  background: $blue-dark;
+  box-sizing: border-box;
+  height: 100%;
+
+  // Box size everything.
+  * {
+    box-sizing: inherit;
+  }
+}
+
+// Data.
+.data {
+  margin: 50px auto 100px auto;
+  max-width: $max-width;
+  width: 90%;
+}
+
+// Generate.
+.generate {
+  margin: 50px auto 100px auto;
+  max-width: $max-width - 200px;
+  width: 90%;
+}
+
+// Chart.
+.chart {
+  margin: 50px auto 100px auto;
+  max-width: $max-width - 100px;
+  width: 90%;
+}

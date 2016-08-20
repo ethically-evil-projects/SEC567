@@ -1,0 +1,87 @@
+
+/* ----- FORMS.scss ----- */
+
+// Form.
+.form {
+  padding: 0 0 60px 0;
+  position: relative;
+
+  // Form, line.
+  &.form-inline {
+    padding-bottom: 20px;
+  }
+
+  // Field.
+  .field {
+    padding: 0 0 20px 0;
+    position: relative;
+
+    // Half left.
+    &.field-half-left {
+      float: left;
+    }
+
+    // Half right.
+    &.field-half-right {
+      float: right;
+    }
+
+    // Both halves.
+    &.field-half-left,
+    &.field-half-right {
+      width: 48%;
+
+      // Responsive, 600px.
+      @media screen and (max-width: 600px) {
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+
+  // Labels.
+  .label {
+    color: $blue-light;
+    display: block;
+    font-size: $font-size;
+    line-height: 1.4em;
+    padding: 0 0 4px 0;
+  }
+
+  // Tips.
+  .tip {
+    color: $blue-light;
+    font-size: $font-size - 2px;
+    line-height: 1.3em;
+    padding: 8px 0 0 0;
+  }
+
+  // All inputs.
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="email"],
+  input[type="url"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="number"],
+  textarea {
+    border: solid 1px $blue-prime;
+    background: $blue-prime;
+    color: $blue-light;
+    display: block;
+    font-size: $font-size;
+    height: 20px;
+    margin: 0;
+    min-height: 49px;
+    outline: none;
+    padding: 10px 150px 10px 18px;
+    -webkit-appearance: none;
+    width: 100%;
+  }
+
+  // Actions.
+  .actions {
+    @include clearfix;
+  }
+}

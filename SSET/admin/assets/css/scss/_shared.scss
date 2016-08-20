@@ -1,0 +1,40 @@
+
+/* ----- SHARED.scss ----- */
+
+// Message.
+.message {
+  margin: 0 0 22px 0;
+  text-align: center;
+
+  // Heading.
+  &.message-heading {
+    color: $white;
+    font-size: $font-size + 1px;
+  }
+
+  // Title.
+  &.message-title {
+    color: $white;
+    font-size: $font-size + 1px;
+    margin-top: 10px;
+  }
+
+  // Error message.
+  &.message-error {
+    background: $red-prime;
+    color: $red-lightest;
+    padding: 15px;
+  }
+
+  // Success message.
+  &.message-success {
+    background: $green-prime;
+    color: $green-lightest;
+    padding: 15px;
+  }
+}
+
+// Start hidden.
+.hidden {
+  display: none !important;
+}

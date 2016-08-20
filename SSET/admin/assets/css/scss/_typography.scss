@@ -1,0 +1,106 @@
+
+/* ----- TYPOGRAPHY.scss ----- */
+
+// Fonts.
+@import url(//fonts.googleapis.com/css?family=Dosis:400,600);
+
+// Stacks.
+$font-prime: "Dosis", helvetica, arial, sans-serif;
+
+// Font size.
+$font-size: 16px;
+
+// HTML.
+html {
+  font-size: 100%;
+}
+
+// Body.
+body {
+  color: $white;
+  font-family: $font-prime;
+  font-size: $font-size;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+// Default heading styles.
+h1, h2, h3, h4, h5, h6 {
+  color: $white;
+  font-family: $font-prime;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+// Default heading sizes.
+h1 {font-size: $font-size + 14px;}
+h2 {font-size: $font-size + 12px;}
+h3 {font-size: $font-size + 10px;}
+h4 {font-size: $font-size + 8px;}
+h5 {font-size: $font-size + 6px;}
+h6 {font-size: $font-size + 4px;}
+
+// Default paragraph styles.
+p {
+  color: $white;
+  font-family: $font-prime;
+  font-size: $font-size;
+  line-height: 1.5em;
+  margin: 0 0 15px 0;
+}
+
+// Default links.
+a {
+  color: $blue-lightest;
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+  outline: thin dotted $white;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:visited {
+  color: $blue-lightest;
+}
+a:link {
+  -webkit-tap-highlight-color: $blue-lightest;
+}
+a:hover {
+  @include transition-all;
+  color: $blue-lightest;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+// Selections.
+::-moz-selection {
+  background: $blue-lightest;
+  color: $white;
+  text-shadow: none;
+}
+::selection {
+  background: $blue-lightest;
+  color: $white;
+  text-shadow: none;
+}
+
+// Bold.
+strong, b {
+  font-weight: 600;
+}
+
+// Emphasis.
+em {
+  font-style: italic;
+}
+
+// Pre.
+pre {
+  color: $blue-light;
+  font-size: $font-size - 3px;
+  line-height: 1.5em;
+}

@@ -1,0 +1,45 @@
+
+/* ----- CHART.scss ----- */
+
+// Chart.
+.chart {
+
+  // Row.
+  .row {
+    @include clearfix;
+    margin: 0 0 15px 0;
+  }
+
+  // Group.
+  .group {
+    color: $blue-light;
+    float: left;
+    padding: 5px 0 0 0;
+    text-align: right;
+    width: 20%;
+  }
+
+  // Bar.
+  .bar {
+    background: $blue-prime;
+    float: right;
+    margin: 0 10% 0 0;
+    padding: 5px;
+    position: relative;
+    width: 65%;
+
+    // Stat.
+    .stat {
+      color: $white;
+      font-size: 12px;
+      position: absolute; top: 9px; right: 10px;
+    }
+
+    // Inner.
+    .inner {
+      background: $blue-lightest;
+      display: block;
+      height: 25px;
+    }
+  }
+}

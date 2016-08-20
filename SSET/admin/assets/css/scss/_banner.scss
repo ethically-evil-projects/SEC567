@@ -1,0 +1,33 @@
+
+/* ----- BANNER.css ----- */
+
+// Banner.
+.banner {
+  background: $blue-darkest;
+  color: $white;
+  padding: 20px 0 35px 0;
+  text-align: center;
+
+  // Logo.
+  .logo {
+    margin: 0 auto 10px auto;
+    max-width: 400px;
+    width: 90%;
+  }
+
+  // Nav.
+  .nav {
+
+    // Link.
+    .link {
+      border-bottom: solid 2px $blue-light;
+      margin: 0 10px 0 10px;
+      padding: 0 0 2px 0;
+
+      // Hover.
+      &:hover {
+        border-bottom: solid 2px $blue-lightest;
+      }
+    }
+  }
+}

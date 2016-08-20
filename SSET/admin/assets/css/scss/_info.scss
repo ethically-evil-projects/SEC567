@@ -1,0 +1,28 @@
+
+/* ----- INFO.scss ----- */
+
+// Info.
+.info {
+  border: solid 1px $blue-prime;
+  margin: 50px auto 50px auto;
+  max-width: 600px;
+  padding: 0 0 30px 0;
+  width: 90%;
+
+  // Title.
+  .title {
+    background: $blue-darkest;
+    border-bottom: solid 1px $blue-prime;
+    color: $blue-light;
+    font-weight: 600;
+    margin: 0 0 50px 0;
+    padding: 15px;
+    text-align: center;
+  }
+
+  // Line.
+  .line {
+    color: $blue-light;
+    padding: 0 50px 20px 50px;
+  }
+}

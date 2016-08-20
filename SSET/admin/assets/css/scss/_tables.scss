@@ -1,0 +1,63 @@
+
+/* ----- TABLES.scss ----- */
+
+// Table.
+.table {
+  border-top: solid 1px $blue-prime;
+  border-left: solid 1px $blue-prime;
+  text-align: left;
+  width: 100%;
+
+  // Head.
+  th {
+    background: $blue-darkest;
+    border-right: solid 1px $blue-prime;
+    padding: 0;
+
+    // Title.
+    .title {
+      color: $blue-light;
+      display: block;
+      padding: 15px;
+    }
+
+    // Links hovered.
+    a:hover {
+      background: $blue-lightest;
+      color: $white;
+    }
+  }
+
+  // Rows and columns.
+  td,
+  tr {
+    border-top: none;
+    border-left: none;
+    border-right: solid 1px $blue-prime;
+    border-bottom: solid 1px $blue-prime;
+    color: $blue-light;
+    padding: 15px;
+  }
+
+  // Link.
+  .link-full {
+    color: $blue-light;
+    display: block;
+
+    // Hover.
+    &:hover {
+      color: $blue-lightest;
+    }
+  }
+
+  // Logo's.
+  .logos {
+
+    // Images.
+    img {
+      display: inline-block;
+      margin: 0 10px 10px 0;
+      width: 16px;
+    }
+  }
+}

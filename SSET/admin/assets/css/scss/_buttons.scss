@@ -1,0 +1,58 @@
+
+/* ----- BUTTONS.scss ----- */
+
+// Default button.
+.btn, a.btn, input[type="submit"].btn {
+  @include transition-all;
+  background-color: $blue-lightest;
+  border: solid 1px $blue-lightest;
+  color: $white;
+  float: left;
+  font-family: $font-prime;
+  font-size: $font-size - 1px;
+  line-height: 1em;
+  margin: 0;
+  max-width: 100%;
+  padding: 16px 20px 16px 20px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;
+  -webkit-text-size-adjust: none;
+
+  // States.
+  &:visited,
+  &:focus,
+  &:link,
+  &:active {
+    color: $white;
+    outline: none;
+  }
+
+  // Focus.
+  &:focus {
+    outline: thin dotted $white;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+
+  // Hover.
+  &:hover {
+    background-color: $blue-darkest;
+    border: solid 1px $blue-darkest;
+    color: $blue-lightest;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  // Full width button.
+  &.btn-full {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  // Button fixed to top right.
+  &.btn-fixed {
+    position: absolute; top: 0; right: 0;
+  }
+}

