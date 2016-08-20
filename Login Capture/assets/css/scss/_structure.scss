@@ -1,0 +1,20 @@
+
+/* ----- STRUCTURE.scss ----- */
+
+// Set max width.
+$max-width: 400px;
+
+// Universal box sizing.
+html, body {
+  box-sizing: border-box;
+
+  // Everything.
+  * {
+    box-sizing: inherit;
+  }
+}
+
+// HTML.
+html {
+  height: 100%;
+}

@@ -1,0 +1,153 @@
+
+/* ----- OPTION-015.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Assistant";
+
+// Colors.
+$color-015-blue: #3C3D4E;
+$color-015-yellow: #FEB51B;
+$color-015-grey: #F5F5F5;
+$color-015-white: #FFFFFF;
+
+// Option 015.
+.option-015 {
+  background: $color-015-grey;
+  font-family: "Assistant", sans-serif;
+
+  // Content.
+  .content {
+    @include box-shadow-even;
+    @include rounded(6px);
+  }
+
+  // Link.
+  .link {
+    color: $color-015-yellow;
+  }
+
+  // Header.
+  .header {
+    padding: 0 0 30px 0 !important;
+  }
+
+  // PNG.
+  .png {
+    height: 120px;
+    width: 200px;
+  }
+
+  // Heading.
+  .heading {
+    display: none;
+  }
+
+  // Label.
+  .label {
+    color: darken($color-015-grey, 20%);
+    font-size: $font-size - 1px;
+    position: absolute; top: 15px; right: 20px;
+  }
+
+  // Fields, email and password.
+  .field-email,
+  .field-password {
+    padding: 0;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    background: $color-015-grey;
+    border: solid 1px $color-015-grey;
+    color: $color-015-blue;
+    padding-left: 45px;
+    padding-right: 90px;
+
+    // Focus.
+    &:focus {
+      background: $color-015-grey;
+      border: solid 1px $color-015-grey;
+      color: $color-015-blue;
+    }
+  }
+
+  // Input, email.
+  .input-email,
+  .input-email:focus {
+    border-bottom: solid 1px darken($color-015-grey, 10%);
+  }
+
+  // Fields, icon set-up.
+  .field-email:after,
+  .field-password:after {
+    content: "";
+    height: 20px;
+    position: absolute; top: 12px; left: 12px;
+    width: 20px;
+  }
+
+  // Field, email, icon.
+  .field-email:after {
+    background: url("../images/015-email.png");
+    background-size: 20px 20px;
+  }
+
+  // Field, password, icon.
+  .field-password:after {
+    background: url("../images/015-password.png");
+    background-size: 20px 20px;
+  }
+
+  // Field, remember.
+  .field-remember {
+    margin: 0 0 20px 20px;
+
+    // Box.
+    .label-remember:before {
+      border: solid 1px darken($color-015-grey, 10%);
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-015-yellow;
+
+      // Before.
+      &:before {
+        border: solid 1px $color-015-yellow;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-015-yellow;
+      border: solid 1px $color-015-yellow;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(3px);
+    background: $color-015-blue;
+    border: solid 1px $color-015-blue;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: darken($color-015-blue, 10%);
+      border: solid 1px darken($color-015-blue, 10%);
+    }
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 1px;
+  }
+
+  // Footer.
+  .footer {
+    color: darken($color-015-grey, 10%);
+    font-size: $font-size - 1px;
+  }
+}

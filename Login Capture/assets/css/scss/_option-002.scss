@@ -1,0 +1,125 @@
+
+/* ----- OPTION-002.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+
+// Colors.
+$color-002-white: #FFFFFF;
+$color-002-green: #26AE90;
+$color-002-red: #CC5863;
+
+// Option 002.
+.option-002 {
+  background: $color-002-green;
+  font-family: "Montserrat", sans-serif;
+
+  // Link.
+  .link {
+    color: lighten($color-002-green, 20%);
+  }
+
+  // SVG.
+  .svg {
+    height: 200px;
+    width: 200px;
+  }
+
+  // Heading.
+  .heading {
+    color: $color-002-white;
+  }
+
+  // Header.
+  .header {
+    padding-bottom: 20px;
+  }
+
+  // Form.
+  .form {
+    background: none !important;
+    padding: 0 !important;
+  }
+
+  // Field, remember.
+  .field-remember {
+
+    // Label.
+    .label-remember {
+      padding: 1px 0 0 28px;
+    }
+
+    // Checkbox.
+    .label-remember:before {
+      border: solid 3px lighten($color-002-green, 20%);
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: lighten($color-002-green, 20%);
+
+      // Before.
+      &:before {
+        border: solid 3px lighten($color-002-green, 20%);
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: lighten($color-002-green, 20%);
+      border: solid 3px lighten($color-002-green, 20%);
+    }
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    border: solid 3px $color-002-white;
+    color: darken($color-002-green, 5%);
+    height: 64px;
+    padding: 18px;
+
+    // Focus.
+    &:focus {
+      border: solid 3px lighten($color-002-green, 25%);
+    }
+  }
+
+  // Actions.
+  .actions {
+    padding: 0 0 20px 0;
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(5px);
+    background: $color-002-white;
+    border: solid 1px $color-002-white;
+    color: darken($color-002-green, 5%);
+    float: right;
+    font-size: $font-size;
+    margin: 0 0 5px 0;
+    padding: 20px;
+    width: 50%;
+  }
+
+  // Label.
+  .label {
+    color: lighten($color-002-green, 25%);
+    font-size: $font-size - 1px;
+  }
+
+  // Extras.
+  .extras {
+    border-top: solid 3px lighten($color-002-green, 20%);
+    font-size: $font-size - 1px;
+    padding: 20px 0 0 0;
+    text-align: right;
+  }
+
+  // Footer.
+  .footer {
+    color: lighten($color-002-green, 40%);
+    font-size: $font-size - 1px;
+  }
+}

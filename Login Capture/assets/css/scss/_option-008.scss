@@ -1,0 +1,120 @@
+
+/* ----- OPTION-008.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700";
+
+// Colors.
+$color-008-yellow: #F7CB1B;
+$color-008-grey: #D2DCE5;
+
+// Option 008.
+.option-008 {
+  background: $color-primary-white;
+  font-family: "Roboto", sans-serif;
+
+  // Link.
+  .link {
+    color: darken($color-008-yellow, 10%);
+  }
+
+  // Content.
+  .content {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  // Header.
+  .header {
+    background: $color-008-yellow;
+    margin: 0 0 80px 0;
+    padding: 30px;
+
+    // PNG.
+    .png {
+      width: 500px;
+    }
+  }
+
+  // Heading.
+  .heading {
+    font-weight: 700;
+    text-align: left;
+  }
+
+  // Form.
+  .form {
+    margin: 0 auto 0 auto;
+    max-width: $max-width + 160px;
+    padding: 30px 30px 10px 30px !important;
+  }
+
+  // Field, remember.
+  .field-remember {
+    text-align: right;
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-008-yellow;
+
+      // Before.
+      &:before {
+        border: solid 1px $color-008-yellow;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-008-yellow;
+      border: solid 1px $color-008-yellow;
+    }
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    border: solid 1px $color-008-grey;
+
+    // Focus.
+    &:focus {
+      border: solid 1px $color-008-yellow;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(3px);
+    background: $color-008-yellow;
+    color: darken($color-008-yellow, 25%);
+    border: solid 1px darken($color-008-yellow, 15%);
+    padding: 20px;
+  }
+
+  // Label.
+  .label {
+    color: darken($color-001-grey, 30%);
+    font-size: $font-size - 1px;
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 1px;
+    text-align: left;
+
+    // Extra.
+    .extra {
+      @include inline-block;
+      margin: 0 15px 0 0;
+    }
+  }
+
+  // Footer.
+  .footer {
+    color: $color-001-grey;
+    font-size: $font-size - 1px;
+    margin: 0 auto 0 auto;
+    max-width: $max-width + 160px;
+    padding: 0 30px 0 30px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,114 @@
+
+/* ----- OPTION-006.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700i";
+
+// Colors.
+$color-006-pink: #F35DBF;
+$color-006-grey: #8D939F;
+
+// Option 006.
+.option-006 {
+  @include background-cover;
+  background-image: url("/assets/images/006-background.jpg");
+  font-family: "Gentium Book Basic", sans-serif;
+
+  // Link.
+  .link {
+    color: $color-006-pink;
+  }
+
+  // Logo.
+  .logo {
+    font-style: italic;
+    font-weight: 700;
+
+    // Dot.
+    .dot {
+      color: $color-006-pink;
+    }
+  }
+
+  // Heading.
+  .heading {
+    display: none;
+  }
+
+  // Label.
+  .label {
+    color: lighten($color-006-grey, 15%);
+    font-size: $font-size - 1px;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    border: solid 1px lighten($color-006-grey, 25%);
+    color: $color-006-grey;
+    font-size: $font-size - 1px;
+
+    // Focus.
+    &:focus {
+      border: solid 1px $color-006-pink;
+      color: $color-006-grey;
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+
+    // Box.
+    .label-remember:before {
+      border: solid 1px lighten($color-006-grey, 25%);
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-006-pink;
+
+      // Before.
+      &:before {
+        border: solid 1px $color-006-pink;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-006-pink;
+      border: solid 1px $color-006-pink;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(6px);
+    background: $color-006-pink;
+    border: solid 1px $color-006-pink;
+    font-size: $font-size + 1px;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: darken($color-006-pink, 10%);
+      border: solid 1px darken($color-006-pink, 10%);
+    }
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 1px;
+    padding-bottom: 50px;
+
+    // Link.
+    .link {
+      color: lighten($color-006-grey, 15%);
+    }
+  }
+
+  // Footer.
+  .footer {
+    display: none;
+  }
+}

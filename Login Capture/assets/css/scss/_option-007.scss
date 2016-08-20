@@ -1,0 +1,143 @@
+
+/* ----- OPTION-007.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Assistant:400,700";
+
+// Colors.
+$color-007-grey: #EEEEEF;
+$color-007-blue: #7782E4;
+$color-007-red: #F8584D;
+$color-007-yellow: #FEA437;
+
+// Option 007.
+.option-007 {
+  @include background-cover;
+  background-color: $color-primary-white;
+  background-image: url("/assets/images/007-background.svg");
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: 960px 480px;
+  font-family: "Assistant", sans-serif;
+
+  // Content.
+  .content {
+    background: $color-primary-white;
+    border: solid 5px $color-007-grey;
+
+    // Responsive.
+    @media screen and (max-width: 650px) {
+      margin: 50px auto 50px auto;
+    }
+  }
+
+  // Header.
+  .header {
+    padding: 20px 0 40px 0 !important;
+  }
+
+  // Form.
+  .form {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  // Link.
+  .link {
+    color: $color-007-blue;
+  }
+
+  // PNG.
+  .png {
+    height: 150px;
+    width: 200px;
+  }
+
+  // Content.
+  .content {
+    max-width: $max-width + 100px;
+  }
+
+  // Heading.
+  .heading {
+    display: none;
+  }
+
+  // Label.
+  .label {
+    color: darken($color-007-grey, 50%);
+    font-size: $font-size - 1px;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    border: solid 2px $color-007-grey;
+    color: darken($color-007-grey, 50%);
+    font-size: $font-size - 1px;
+
+    // Focus.
+    &:focus {
+      border: solid 2px $color-007-blue;
+      color: darken($color-007-grey, 50%);
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+
+    // Box.
+    .label-remember:before {
+      border: solid 2px $color-007-grey;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-007-blue;
+
+      // Before.
+      &:before {
+        border: solid 2px $color-007-blue;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-007-blue;
+      border: solid 2px $color-007-blue;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(0px);
+    background: $color-007-blue;
+    border: solid 1px $color-007-blue;
+    font-size: $font-size + 2px;
+    font-weight: 700;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: darken($color-007-blue, 10%);
+      border: solid 1px darken($color-007-blue, 10%);
+    }
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 1px;
+
+    // Link.
+    .link {
+      color: darken($color-007-grey, 25%);
+    }
+  }
+
+  // Footer.
+  .footer {
+    color: darken($color-007-grey, 10%);
+    padding-bottom: 0 !important;
+  }
+}

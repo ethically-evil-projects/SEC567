@@ -1,0 +1,95 @@
+
+/* ----- OPTION-001.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Assistant";
+
+// Colors.
+$color-001-grey: #D2DCE5;
+$color-001-blue: #38A4E3;
+$color-001-red: #C74353;
+
+// Option 001.
+.option-001 {
+  background: $color-primary-white;
+  font-family: "Assistant", sans-serif;
+
+  // Link.
+  .link {
+    color: $color-001-blue;
+  }
+
+  // SVG.
+  .svg {
+    height: 90px;
+    width: 150px;
+  }
+
+  // Form.
+  .form {
+    @include rounded(3px);
+    border: solid 1px $color-001-grey;
+    max-width: $max-width + 200px;
+  }
+
+  // Field, remember.
+  .field-remember {
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-001-blue;
+
+      // Before.
+      &:before {
+        border: solid 1px $color-001-blue;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-001-blue;
+      border: solid 1px $color-001-blue;
+    }
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    border: solid 1px $color-001-grey;
+
+    // Focus.
+    &:focus {
+      border: solid 1px $color-001-blue;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(3px);
+    background: $color-001-blue;
+    border: solid 1px darken($color-001-blue, 10%);
+    font-size: $font-size - 1px;
+    padding: 20px;
+  }
+
+  // Label.
+  .label {
+    color: darken($color-001-grey, 30%);
+    font-size: $font-size - 1px;
+  }
+
+  // Extras.
+  .extras {
+    @include rounded-bottom(3px);
+    background: lighten($color-001-grey, 10%);
+    border-top: solid 1px $color-001-grey;
+    font-size: $font-size - 1px;
+    margin: 30px -30px -30px -30px;
+    padding: 50px;
+  }
+
+  // Footer.
+  .footer {
+    color: $color-001-grey;
+  }
+}

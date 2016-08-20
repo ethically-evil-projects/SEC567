@@ -20,3 +20,6 @@ From here you can create your payloads, track your results and report on them. N
 
 ## CTF Solutions
 The SEC567 class includes a reconnaissance, scanning and information re-use CTF. The solutions guide to the CTF for students that wish to continue working on the CTF after they have left the class is provided in the CTF folder. It is password protected and your instructor will provide you with the credentials to extract the archive. Please do not publish the solution and ruin the CTF for other students that may be having fun solving the challenge.
+
+## Login Capture screens
+Often when social engineering, collecting credentials is a primary focus for demonstrating how an attacker could gain access to data. Many of the tools out there do an excellent job of collecting the information, or distributing the requests but do a horrible job of producing convincing pages. The login screens portion of the repository provides some relatively standardized, but specifically designed screens that can be integrated in to your campaigns. These should be a tad more convincing than the defaults of many tools and help you increase your success rates. We will extend these over time and you can customize them freely for your own requirements.

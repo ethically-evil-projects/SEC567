@@ -1,0 +1,133 @@
+
+/* ----- OPTION-014.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Droid+Sans";
+
+// Colors.
+$color-014-blue: #1992F0;
+$color-014-navy: #2D353F;
+$color-014-grey: #C6C8CC;
+$color-014-white: #FFFFFF;
+
+// Option 014.
+.option-014 {
+  background: $color-014-navy;
+  border-top: solid 50px $color-014-blue;
+  font-family: "Droid Sans", sans-serif;
+
+  // Link.
+  .link {
+    color: $color-014-blue;
+  }
+
+  // PNG.
+  .png {
+    height: 120px;
+    width: 200px;
+  }
+
+  // Content.
+  .content {
+    max-width: 500px;
+  }
+
+  // Heading.
+  .heading {
+    display: none;
+  }
+
+  // Header.
+  .header {
+    padding: 100px 0 60px 0;
+  }
+
+  // Form.
+  .form {
+    background: none !important;
+    border: dashed 2px $color-014-blue;
+    padding: 50px !important;
+  }
+
+  // Field, remember.
+  .field-remember {
+
+    // Label.
+    .label-remember {
+      padding: 1px 0 0 28px;
+    }
+
+    // Checkbox.
+    .label-remember:before {
+      border: solid 2px lighten($color-014-grey, 20%);
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: lighten($color-014-grey, 20%);
+
+      // Before.
+      &:before {
+        border: solid 2px lighten($color-014-grey, 20%);
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: lighten($color-014-blue, 20%);
+      border: solid 2px lighten($color-014-blue, 20%);
+    }
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    background: $color-014-grey;
+    border: solid 2px $color-014-grey;
+    color: $color-014-navy;
+    height: 64px;
+    padding: 18px;
+
+    // Focus.
+    &:focus {
+      background: $color-014-grey;
+      border: solid 2px $color-014-grey;
+    }
+  }
+
+  // Actions.
+  .actions {
+    padding: 0 0 20px 0;
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(5px);
+    background: $color-014-blue;
+    border: solid 1px $color-014-blue;
+    color: $color-014-white;
+    float: right;
+    font-size: $font-size;
+    margin: 0 0 5px 0;
+    padding: 20px;
+  }
+
+  // Label.
+  .label {
+    color: $color-014-white;
+    font-size: $font-size - 1px;
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 1px;
+    padding: 20px 0 0 0;
+    text-align: right;
+  }
+
+  // Footer.
+  .footer {
+    color: $color-014-white;
+    font-size: $font-size - 1px;
+  }
+}

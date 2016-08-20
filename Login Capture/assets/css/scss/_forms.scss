@@ -1,0 +1,122 @@
+
+/* ----- FORM.scss ----- */
+
+// Form.
+.form {
+
+  // Heading.
+  .heading {
+    font-size: $font-size + 4px;
+    line-height: 1.4em;
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+
+  // Field.
+  .field {
+    padding: 0 0 20px 0;
+    position: relative;
+  }
+
+  // Label.
+  .label {
+    color: $color-grey-dark;
+    display: block;
+    padding: 0 0 5px 0;
+  }
+
+  // Label, remember.
+  .label-remember {
+    padding: 0 0 0 20px;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    border: solid 1px $color-grey-light;
+    box-sizing: border-box;
+    background: $color-primary-white;
+    color: $color-grey-dark;
+    display: block;
+    font-size: $font-size;
+    height: 44px;
+    margin: 0;
+    min-height: 44px;
+    outline: none;
+    padding: 8px;
+    -webkit-appearance: none;
+    width: 100%;
+
+    // Focus.
+    &:focus {
+      border: solid 1px $color-grey-prime;
+      background: $color-primary-white;
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+    @include clearfix;
+
+    // Input.
+    input {
+      display: none;
+    }
+
+    // Label.
+    .label-remember {
+      @include inline-block;
+      cursor: pointer;
+      font-size: $font-size - 1px;
+      font-weight: 400;
+      line-height: 1.3em;
+      margin: 5px 0 0 0;
+      padding: 0 0 0 20px;
+      position: relative;
+    }
+
+    // Indicator.
+    .label-remember:before {
+      border: solid 1px $color-grey-light;
+      content: "";
+      display: block;
+      height: 10px;
+      position: absolute; top: 3px; left: 0;
+      width: 10px;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      @include transition-all;
+      color: $color-blue-prime;
+
+      // Before.
+      &:before {
+        border: solid 1px $color-blue-prime;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      @include transition-all;
+      background: $color-blue-prime;
+      border: solid 1px $color-blue-prime;
+    }
+  }
+
+  // Actions.
+  .actions {
+    @include clearfix;
+  }
+
+  // Extras.
+  .extras {
+    padding: 20px 0 0 0;
+    text-align: center;
+
+    // Extra.
+    .extra {
+      padding: 5px 0 5px 0;
+    }
+  }
+}

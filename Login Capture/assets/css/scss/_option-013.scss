@@ -1,0 +1,143 @@
+
+/* ----- OPTION-013.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco";
+
+// Colors.
+$color-013-pink: #FF5B91;
+$color-013-grey: #8D939F;
+
+// Option 013.
+.option-013 {
+  background: $color-013-pink;
+  font-family: "Sue Ellen Francisco", sans-serif;
+
+  // Link.
+  .link {
+    color: $color-013-pink;
+  }
+
+  // Header.
+  .header {
+    padding: 100px 0 100px 0;
+  }
+
+  // Logo.
+  .logo {
+    font-size: $font-size + 20px !important;
+
+    // Highlight.
+    .highlight {
+      color: $color-013-pink;
+    }
+  }
+
+  // Heading.
+  .heading {
+    display: none;
+  }
+
+  // Content.
+  .content {
+    @include box-shadow-even;
+    max-width: 1000px;
+  }
+
+  // Form.
+  .form {
+    margin: 0 auto 0 auto;
+    max-width: 400px;
+  }
+
+  // Label.
+  .label {
+    color: darken($color-013-grey, 40%);
+    font-size: $font-size + 3px;
+    padding: 0 0 10px 20px;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    @include rounded(35px);
+    border: solid 1px lighten($color-013-grey, 25%);
+    color: $color-013-grey;
+    font-size: $font-size + 3px;
+    min-height: 65px;
+    padding: 20px;
+
+    // Focus.
+    &:focus {
+      border: solid 1px $color-006-pink;
+      color: $color-013-grey;
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+    padding-left: 20px;
+
+    // Label.
+    .label-remember {
+      font-size: $font-size + 3px;
+    }
+
+    // Box.
+    .label-remember:before {
+      @include rounded(3px);
+      border: solid 1px lighten($color-013-grey, 25%);
+      top: 5px;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-013-pink;
+
+      // Before.
+      &:before {
+        border: solid 1px $color-013-pink;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-013-pink;
+      border: solid 1px $color-013-pink;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(35px);
+    background: $color-013-pink;
+    border: solid 1px $color-013-pink;
+    font-size: $font-size + 3px;
+    height: 65px;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: darken($color-013-pink, 2%);
+      border: solid 1px darken($color-013-pink, 2%);
+    }
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size + 3px;
+    padding-bottom: 50px;
+
+    // Link.
+    .link {
+      color: lighten($color-013-grey, 15%);
+    }
+  }
+
+  // Footer.
+  .footer {
+    color: darken($color-013-grey, 40%);
+    font-size: $font-size + 3px;
+  }
+}

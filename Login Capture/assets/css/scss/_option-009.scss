@@ -1,0 +1,124 @@
+
+/* ----- OPTION-009.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+
+// Colors.
+$color-008-yellow: #F7CB1B;
+$color-008-grey: #D2DCE5;
+
+$color-009-red: #BD586B;
+$color-009-orange: #E5756E;
+
+// Option 009.
+.option-009 {
+  @include gradient-vertical(lighten($color-009-orange, 2%), darken($color-009-red, 6%));
+  font-family: "Open Sans", sans-serif;
+
+  // Link.
+  .link {
+    color: $color-primary-white;
+  }
+
+  // Content.
+  .content {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  // Header.
+  .header {
+    padding: 50px 30px 10px 30px;
+
+    // PNG.
+    .png {
+      width: 200px;
+    }
+  }
+
+  // Heading.
+  .heading {
+    display: none;
+  }
+
+  // Form.
+  .form {
+    background: none !important;
+    margin: 0 auto 0 auto;
+    max-width: $max-width + 160px;
+  }
+
+  // Field, remember.
+  .field-remember {
+
+    // Label.
+    .label-remember {
+      color: $color-primary-white;
+
+      // Before.
+      &:before {
+        border: solid 2px $color-primary-white;
+      }
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-009-orange;
+
+      // Before.
+      &:before {
+        border: solid 2px $color-009-orange;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-009-orange;
+      border: solid 2px $color-009-orange;
+    }
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    background: none !important;
+    border: solid 2px $color-primary-white;
+    color: $color-primary-white;
+
+    // Focus.
+    &:focus {
+      border: solid 2px $color-009-orange;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(3px);
+    background: $color-primary-white;
+    color: $color-009-red;
+    border: solid 1px $color-primary-white;
+    padding: 20px;
+  }
+
+  // Label.
+  .label {
+    color: $color-primary-white;
+    font-size: $font-size - 1px;
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 1px;
+  }
+
+  // Footer.
+  .footer {
+    color: $color-primary-white;
+    font-size: $font-size - 1px;
+    margin: 0 auto 0 auto;
+    max-width: $max-width + 160px;
+    opacity: 0.2;
+    padding: 0 30px 0 30px;
+  }
+}

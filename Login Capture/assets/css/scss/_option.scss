@@ -1,0 +1,181 @@
+
+/* ----- OPTION.scss ----- */
+
+// Option.
+.option {
+  background: $color-grey-lightest;
+
+  // Header.
+  .header {
+    line-height: 1.4em;
+    margin: 0 auto 0 auto;
+    padding: 50px 0 50px 0;
+    text-align: center;
+
+    // Logo.
+    .logo {
+      font-size: $font-size + 10px;
+    }
+
+    // Image.
+    img {
+      margin: 0 auto 0 auto;
+    }
+  }
+
+  // Content.
+  .content {
+    @include clearfix;
+    margin: 0 auto 0 auto;
+    max-width: $max-width;
+    width: 90%;
+  }
+
+  // Footer.
+  .footer {
+    line-height: 1.4em;
+    margin: 0 auto 0 auto;
+    padding: 50px 0 50px 0;
+    text-align: center;
+  }
+
+  // Layout, simple.
+  &.layout-simple {
+
+    // Form.
+    .form {
+      background: $color-primary-white;
+      padding: 30px;
+    }
+  }
+
+  // Layout, enclosed.
+  &.layout-enclosed {
+
+    // Content.
+    .content {
+      background: $color-primary-white;
+      margin-top: 50px;
+      padding: 30px;
+    }
+
+    // Logo.
+    .header {
+      padding-top: 20px;
+    }
+
+    // Footer.
+    .footer {
+      padding-bottom: 20px;
+    }
+  }
+
+  // Layout, split.
+  &.layout-split {
+
+    // Content.
+    .content {
+      margin-top: 50px;
+      max-width: $max-width + 400px;
+    }
+
+    // Panel, right.
+    &.panel-right {
+
+      // Form.
+      .form {
+        margin: 0 50% 0 0;
+
+        // Responsive.
+        @media screen and (max-width: 650px) {
+          margin: 250px 0 0 0;
+        }
+      }
+
+      // Panel.
+      .form:after {
+        content: "";
+        right: -100%;
+
+        // Responsive.
+        @media screen and (max-width: 650px) {
+          height: 250px;
+          top: -250px; right: 0;
+        }
+      }
+    }
+
+    // Panel, left.
+    &.panel-left {
+
+      // Form.
+      .form {
+        margin: 0 0 0 50%;
+
+        // Responsive.
+        @media screen and (max-width: 650px) {
+          margin: 250px 0 0 0;
+        }
+      }
+
+      // Panel.
+      .form:after {
+        content: "";
+        left: -100%;
+
+        // Responsive.
+        @media screen and (max-width: 650px) {
+          height: 250px;
+          top: -250px; left: 0;
+        }
+      }
+    }
+
+    // Form.
+    .form {
+      background: $color-primary-white;
+      padding: 30px;
+      position: relative;
+    }
+
+    // Panel.
+    .form:after {
+      height: 100%;
+      position: absolute; top: 0;
+      width: 100%;
+    }
+  }
+
+  // Layout, edge.
+  &.layout-edge {
+
+    // Content.
+    .content {
+      background-color: $color-primary-white;
+      height: 100%;
+      min-height: 800px;
+      overflow: scroll;
+      padding: 0 30px 0 30px;
+      position: fixed; top: 0; bottom: 0;
+      width: 100%;
+    }
+
+    // Panel, left.
+    &.panel-left {
+
+      // Content.
+      .content {
+        right: 0;
+      }
+    }
+
+    // Panel, right.
+    &.panel-right {
+
+      // Content.
+      .content {
+        left: 0;
+      }
+    }
+  }
+}

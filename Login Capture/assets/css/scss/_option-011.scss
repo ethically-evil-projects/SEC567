@@ -1,0 +1,137 @@
+
+/* ----- OPTION-010.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Fira+Sans";
+
+// Colors.
+$color-011-mint: #79D4DB;
+$color-011-grey: #CBCBCB;
+
+// Option 011.
+.option-011 {
+  @include gradient-vertical($color-011-mint, darken($color-011-mint, 15%));
+  font-family: "Fira Sans", sans-serif;
+
+  // Content.
+  .content {
+    @include box-shadow-even;
+    @include rounded(5px);
+    background: $color-primary-white;
+    margin: 100px auto 100px auto !important;
+
+    // Responsive.
+    @media screen and (max-width: 650px) {
+      margin: 20px auto 20px auto !important;
+    }
+  }
+
+  // Header.
+  .header {
+    padding: 20px 0 40px 0 !important;
+  }
+
+  // Form.
+  .form {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  // Link.
+  .link {
+    color: $color-011-mint;
+  }
+
+  // PNG.
+  .png {
+    height: 150px;
+    width: 200px;
+  }
+
+  // Content.
+  .content {
+    max-width: $max-width + 100px;
+  }
+
+  // Heading.
+  .heading {
+    display: none;
+  }
+
+  // Label.
+  .label {
+    color: $color-011-grey;
+    font-size: $font-size - 1px;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    @include rounded(3px);
+    background: lighten($color-011-grey, 18%);
+    border: solid 1px lighten($color-011-grey, 10%);
+    color: darken($color-011-grey, 50%);
+    font-size: $font-size - 1px;
+    height: 55px;
+    padding: 15px;
+
+    // Focus.
+    &:focus {
+      background: lighten($color-011-grey, 18%);
+      border: solid 1px lighten($color-011-grey, 10%);
+      color: darken($color-011-grey, 50%);
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+
+    // Box.
+    .label-remember:before {
+      border: solid 2px $color-011-mint;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-011-mint;
+
+      // Before.
+      &:before {
+        border: solid 2px $color-011-mint;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-011-mint;
+      border: solid 2px $color-011-mint;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(5px);
+    background: $color-011-mint;
+    border: solid 1px $color-011-mint;
+    font-size: $font-size + 2px;
+    font-weight: 700;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: darken($color-011-mint, 10%);
+      border: solid 1px darken($color-011-mint, 10%);
+    }
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 1px;
+  }
+
+  // Footer.
+  .footer {
+    color: $color-011-grey;
+  }
+}

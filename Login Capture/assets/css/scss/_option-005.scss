@@ -1,0 +1,130 @@
+
+/* ----- OPTION-005.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Cabin+Condensed";
+
+// Colors.
+$color-005-brown: #724644;
+$color-005-blue: #343F67;
+$color-005-grey: #8D939F;
+
+// Option 005.
+.option-005 {
+  @include background-cover;
+  background-image: url("/assets/images/005-background.jpg");
+  font-family: "Cabin Condensed", sans-serif;
+
+  // Link.
+  .link {
+    color: $color-005-brown;
+  }
+
+  // Header.
+  .header {
+    padding: 0 0 30px 0 !important;
+  }
+
+  // Form.
+  .form {
+    @include box-shadow-even(50px, $color-primary-black, 1.0);
+  }
+
+  // Panel.
+  .form:after {
+    @include background-cover;
+    background-image: url("/assets/images/005-content.jpg");
+    background-position: top right;
+  }
+
+  // PNG.
+  .png {
+    height: 90px;
+    width: 200px;
+  }
+
+  // Heading.
+  .heading {
+    margin-bottom: 0;
+  }
+
+  // Field, email.
+  .field-email {
+    padding-top: 20px;
+  }
+
+  // Label.
+  .label {
+    color: lighten($color-005-grey, 15%);
+    font-size: $font-size - 1px;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    border: solid 1px lighten($color-005-grey, 25%);
+    color: $color-005-grey;
+
+    // Focus.
+    &:focus {
+      border: solid 1px lighten($color-005-grey, 25%);
+      color: $color-005-grey;
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+
+    // Box.
+    .label-remember:before {
+      border: solid 1px lighten($color-005-grey, 25%);
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-005-blue;
+
+      // Before.
+      &:before {
+        border: solid 1px $color-005-blue;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-005-blue;
+      border: solid 1px $color-005-blue;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(6px);
+    background: $color-005-blue;
+    border: solid 1px $color-005-blue;
+    font-size: $font-size + 1px;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: darken($color-005-blue, 10%);
+      border: solid 1px darken($color-005-blue, 10%);
+    }
+  }
+
+  // Extras.
+  .extras {
+
+    // Link.
+    .link {
+      color: lighten($color-005-grey, 15%);
+    }
+  }
+
+  // Footer.
+  .footer {
+    color: lighten($color-005-grey, 25%);
+    opacity: 0.5;
+  }
+}

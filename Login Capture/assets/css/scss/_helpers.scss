@@ -1,0 +1,138 @@
+
+/* ----- HELPERS.scss ----- */
+
+// Background cover.
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// Robust inline block.
+@mixin inline-block {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+}
+
+// Transitions.
+@mixin transition-all ($speed: 0.2s) {
+  -webkit-transition: all $speed ease-in-out;
+  -moz-transition: all $speed ease-in-out;
+  -o-transition: all $speed ease-in-out;
+  transition: all $speed ease-in-out;
+}
+
+// Rounded corners.
+@mixin rounded ($radius: 10px) {
+  border-radius: $radius;
+}
+
+// Rounded corners, bottom.
+@mixin rounded-bottom ($radius: 10px) {
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+// Rounded corners, top.
+@mixin rounded-top ($radius: 10px) {
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+// Rounded corners, right.
+@mixin rounded-right ($radius: 10px) {
+  border-top-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+// Rounded corners, left.
+@mixin rounded-left ($radius: 10px) {
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+// Rounded corners, top left.
+@mixin rounded-top-left ($radius: 10px) {
+  border-top-left-radius: $radius;
+}
+
+// Rounded corners, top right.
+@mixin rounded-top-right ($radius: 10px) {
+  border-top-right-radius: $radius;
+}
+
+// Box shadow.
+@mixin box-shadow-even($spread: 30px, $color: $color-primary-black, $opacity: 0.75) {
+  -webkit-box-shadow: 0px 0px $spread -14px rgba($color,$opacity);
+  -moz-box-shadow: 0px 0px $spread -14px rgba($color,$opacity);
+  box-shadow: 0px 0px $spread -14px rgba($color,$opacity);
+}
+
+// Gradient, horizontal.
+@mixin gradient-horizontal($first-color: $color-blue-prime, $second-color: $color-green-prime) {
+
+  // Fallback (solid or jpg/png).
+  background-color: $first-color;
+
+  // SVG fallback for IE 9 down.
+  // background-image: url(fallback-gradient.svg);
+
+  // Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0.
+  background-image: -webkit-gradient(linear, left, right, from($first-color), to($second-color));
+
+  // Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3
+  background-image: -webkit-linear-gradient(left, $first-color, $second-color);
+
+  // Firefox 3.6 - 15
+  background-image: -moz-linear-gradient(left, $first-color, $second-color);
+
+  // Opera 11.1 - 12
+  background-image: -o-linear-gradient(left, $first-color, $second-color);
+
+  // Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+
+  background-image: linear-gradient(to left, $first-color, $second-color);
+}
+
+// Gradient, vertical.
+@mixin gradient-vertical($first-color: $color-blue-prime, $second-color: $color-green-prime) {
+
+  // Fallback (solid or jpg/png).
+  background-color: $first-color;
+
+  // SVG fallback for IE 9 down.
+  // background-image: url(fallback-gradient.svg);
+
+  // Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0.
+  background-image: -webkit-gradient(linear, top, bottom, from($first-color), to($second-color));
+
+  // Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3
+  background-image: -webkit-linear-gradient(top, $first-color, $second-color);
+
+  // Firefox 3.6 - 15
+  background-image: -moz-linear-gradient(top, $first-color, $second-color);
+
+  // Opera 11.1 - 12
+  background-image: -o-linear-gradient(top, $first-color, $second-color);
+
+  // Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+
+  background-image: linear-gradient(to top, $first-color, $second-color);
+}
+
+// Clearfix.
+@mixin clearfix {
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+  & {
+    *zoom: 1;
+  }
+}

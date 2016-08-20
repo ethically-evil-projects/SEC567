@@ -1,0 +1,149 @@
+
+/* ----- OPTION-012.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Share";
+
+// Colors.
+$color-012-yellow: #FBB52D;
+$color-012-blue: #303A48;
+$color-012-grey: #A5A8AC;
+
+// Option 012.
+.option-012 {
+  background: $color-primary-white;
+  font-family: "Share", sans-serif;
+
+  // Link.
+  .link {
+    color: $color-012-yellow;
+  }
+
+  // PNG.
+  .png {
+    height: 100px;
+    width: 200px;
+  }
+
+  // Content.
+  .content {
+    max-width: $max-width + 100px !important;
+  }
+
+  // Form.
+  .form {
+    @include background-cover;
+    @include box-shadow-even;
+    //background: $color-012-blue !important;
+    background-image: url("/assets/images/012-background.jpg") !important;
+    background-repeat: repeat;
+    background-position: center center;
+    padding: 80px !important;
+
+    // Responsive.
+    @media screen and (max-width: 650px) {
+      padding: 30px !important;
+    }
+  }
+
+  // Heading.
+  .heading {
+    @include inline-block;
+    border-bottom: solid 2px $color-012-yellow;
+    color: $color-primary-white;
+    font-size: $font-size + 2px;
+    margin: 0 0 50px 0;
+    padding: 0 0 5px 0;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  // Field, remember.
+  .field-remember {
+
+    // Label.
+    .label-remember {
+      color: $color-012-grey;
+    }
+
+    // Label, before.
+    .label-remember:before {
+      border: solid 2px $color-012-grey;
+      top: 2px;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-012-yellow;
+
+      // Before.
+      &:before {
+        border: solid 2px $color-012-yellow;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-012-yellow;
+      border: solid 2px $color-012-yellow;
+    }
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    background: none;
+    border: none;
+    border-bottom: solid 2px $color-012-grey;
+    color: $color-primary-white;
+
+    // Focus.
+    &:focus {
+      background: none;
+      border: none;
+      border-bottom: solid 2px $color-012-yellow;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(30px);
+    background: $color-012-yellow;
+    border: solid 1px $color-012-yellow;
+    float: right;
+    font-size: $font-size;
+    padding: 20px;
+    text-transform: uppercase;
+    width: 50%;
+
+    // Hover.
+    &:hover {
+      background: darken($color-012-yellow, 10%);
+      border: solid 1px darken($color-012-yellow, 10%);
+    }
+
+    // Responsive.
+    @media screen and (max-width: 650px) {
+      width: 100%;
+    }
+  }
+
+  // Label.
+  .label {
+    color: $color-012-grey;
+    font-size: $font-size - 1px;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 1px;
+    padding: 50px 0 0 0;
+  }
+
+  // Footer.
+  .footer {
+    color: $color-012-grey;
+  }
+}

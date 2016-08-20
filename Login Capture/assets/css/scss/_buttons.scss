@@ -1,0 +1,66 @@
+
+/* ----- BUTTONS.scss ----- */
+
+// Default button.
+.btn, a.btn, input[type="submit"].btn {
+  @include rounded(4px);
+  background-color: $color-blue-prime;
+  border: solid 1px $color-blue-prime;
+  color: $color-primary-white;
+  display: block;
+  font-size: $font-size;
+  line-height: $font-size;
+  margin: 0;
+  max-width: 100%;
+  padding: 22px 34px 18px 34px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;
+  -webkit-text-size-adjust: none;
+  width: 100%;
+
+  // States.
+  &:visited,
+  &:focus,
+  &:link,
+  &:active {
+    color: $color-primary-white;
+    outline: none;
+  }
+
+  // Just hover.
+  &:hover {
+    background-color: $color-blue-dark;
+    border: solid 1px $color-blue-dark;
+    color: $color-primary-white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  // Just focus.
+  &:focus {
+    // outline: thin dotted $grey-light;
+    // outline: 5px auto -webkit-focus-ring-color;
+    // outline-offset: -2px;
+  }
+
+  // When disabled.
+  &:disabled,
+  &[disabled],
+  &.btn-disabled,
+  &.disabled {
+    background-color: $color-grey-lightest;
+    border: solid 1px $color-grey-lightest;
+    color: $color-grey-prime;
+    cursor: default;
+    pointer-events: none;
+
+    // Hovered.
+    &:hover {
+      background-color: $color-grey-lightest;
+      border: solid 1px $color-grey-lightest;
+      color: $color-grey-prime;
+    }
+  }
+}
