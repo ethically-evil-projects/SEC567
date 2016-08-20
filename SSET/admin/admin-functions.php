@@ -200,8 +200,11 @@ function adminCheck(){
 // ==============
 // ADMIN REGISTER
 // ==============
-function registerAdmin($username, $pwd, $pwd2){
+function registerAdmin($username, $pwd, $pwd2, $token){
   $errors = checkPassword($pwd,$pwd2);
+  if ($token !== admin_token) {
+    $errors[] = "Validation token incorrect.";
+  }
   if (getAdmin($username) !== false ) {
     $errors[] = "Username already exists";
   }
@@ -216,7 +219,6 @@ function registerAdmin($username, $pwd, $pwd2){
   addAdmin($username, $hash);
   return $errors;
 }
-
 
 
 // =========
