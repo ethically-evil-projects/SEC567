@@ -11,10 +11,11 @@ The payloads of the SSET tool are purposefully very and simple. The goal of thes
 For deployment you will want to use a web server that is routable for all your targets, either inside the company boundaries or on the Internet. The broad setup procedure is as follows:
 
 1. Configure a web server with MySQL and PHP (latest 5.x or 7). We prefer nginx but you can use your preferred tool.
-2. Create a MySQL database, e.g. mysql -u root -p; create database social_engineering. We also recommend creating a specific user for this database for the tool to use.
-3. Initialize the database. Under the 000-build directory there is an init.sql file. Execute this file to reconstruct a stating state database, e.g. mysql -u root -p < init.sql
-4. Edit the db.php file in the live section to match your credentials for the database. You could also elect to use server/environment variables as per the dev example if you wish.
-5. Access http://server/admin and sign up, verify your account and then log in.
+2. Edit the config.php file and change the admin_token definition found on line 28 to a unique token.
+3. Create a MySQL database, e.g. mysql -u root -p; create database social_engineering. We also recommend creating a specific user for this database for the tool to use.
+4. Initialize the database. Under the 000-build directory there is an init.sql file. Execute this file to reconstruct a stating state database, e.g. mysql -u root -p < init.sql
+5. Edit the db.php file in the live section to match your credentials for the database. You could also elect to use server/environment variables as per the dev example if you wish.
+6. Access http://server/admin and sign up, you will need the token you set in the config.php file in order to proceed.
 
 From here you can create your payloads, track your results and report on them. Note, we will periodically enhance the tool and we do accept changes - pull requests ahoy!
 
