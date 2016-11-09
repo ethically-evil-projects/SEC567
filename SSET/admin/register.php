@@ -10,8 +10,8 @@ if (adminCount() != 0){
 }
 
 
-if (isset($_POST['submit']) && isset($_POST['username']) && isset($_POST['password']) && isset($_POST['password2'])){
-  $errors = registerAdmin($_POST['username'], $_POST['password'], $_POST['password2']);
+if (isset($_POST['submit']) && isset($_POST['username']) && isset($_POST['password']) && isset($_POST['password2']) && isset($_POST['token'])){
+  $errors = registerAdmin($_POST['username'], $_POST['password'], $_POST['password2'], $_POST['token']);
   if (count($errors) === 0){
     // Put logged in admin into dashboard.
     header("Location: ./login");
@@ -52,6 +52,13 @@ if (isset($_POST['submit']) && isset($_POST['username']) && isset($_POST['passwo
 
       <input type="password" name="password2">
     </div>
+
+    <div class="field">
+      <label class="label">Admin Validation Token</label>
+
+      <input type="text" name="token">
+    </div>
+
 
     <div class="actions">
       <input type="hidden" name="csrf" value="<?php echo $_SESSION['csrf'];?>">

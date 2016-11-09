@@ -22,6 +22,11 @@ define('errorreporting',"log");                                           // Err
 define('redirect_on_error','http://www.google.ca');                       // URL to redirect to on errors
 define('redirect_on_success','http://www.google.com');                    // URL to redirect to on success
 
+
+//You will need this to sign up the initial admin,  use something like the below to generate a random string
+// head /dev/urandom | tr -dc A-Za-z0-9 | head -c 18
+define('admin_token', "THIS_SHOULD_BE_CHANGED");
+
 define("csrf_site_salt", "P1z#UU6syG2UPVf4");
 
 // Set our default timezone and supress warning with @
