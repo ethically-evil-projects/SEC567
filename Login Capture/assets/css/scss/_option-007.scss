@@ -9,21 +9,22 @@ $color-007-grey: #EEEEEF;
 $color-007-blue: #7782E4;
 $color-007-red: #F8584D;
 $color-007-yellow: #FEA437;
+$color-007-white: #FFFFFF;
 
 // Option 007.
 .option-007 {
   @include background-cover;
-  background-color: $color-primary-white;
+  background-color: $color-007-white;
   background-image: url("/assets/images/007-background.svg");
   background-repeat: repeat;
-  background-position: center center;
+  background-position: top center;
   background-size: 960px 480px;
   font-family: "Assistant", sans-serif;
 
   // Content.
   .content {
-    background: $color-primary-white;
-    border: solid 5px $color-007-grey;
+    background: $color-007-white;
+    border: solid 3px $color-007-red;
 
     // Responsive.
     @media screen and (max-width: 650px) {
@@ -47,8 +48,8 @@ $color-007-yellow: #FEA437;
     color: $color-007-blue;
   }
 
-  // PNG.
-  .png {
+  // Image.
+  .image {
     height: 150px;
     width: 200px;
   }
@@ -72,13 +73,13 @@ $color-007-yellow: #FEA437;
   // Inputs, text.
   .input-email,
   .input-password {
-    border: solid 2px $color-007-grey;
+    border: solid 3px $color-007-red;
     color: darken($color-007-grey, 50%);
     font-size: $font-size - 1px;
 
     // Focus.
     &:focus {
-      border: solid 2px $color-007-blue;
+      border: solid 3px $color-007-red;
       color: darken($color-007-grey, 50%);
     }
   }
@@ -128,11 +129,6 @@ $color-007-yellow: #FEA437;
   // Extras.
   .extras {
     font-size: $font-size - 1px;
-
-    // Link.
-    .link {
-      color: darken($color-007-grey, 25%);
-    }
   }
 
   // Footer.

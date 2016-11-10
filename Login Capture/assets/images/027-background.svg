@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3000px" height="2000px" viewBox="0 0 3000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F2F2F2;">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>027-background</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="001" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="027-background">
+            <polygon id="Triangle" fill="#FB5464" points="0 0 456 207 0 811.453125"></polygon>
+            <polygon id="Triangle" fill="#E5A000" points="0 0 837 0 456 207"></polygon>
+            <polygon id="Triangle" fill="#397CBB" points="456 207 660 470 239 495"></polygon>
+            <polygon id="Triangle" fill="#A0C300" points="239 495 318.18412 839.34601 53.2719596 738.956075"></polygon>
+            <polygon id="Triangle" fill="#F5CC3C" points="837 0 1088.35002 265.792246 705 347.956075"></polygon>
+            <polygon id="Triangle" fill="#00AB6D" points="837 0 660 470 456 207"></polygon>
+            <g id="Group" transform="translate(2136.500000, 1334.000000) scale(-1, -1) translate(-2136.500000, -1334.000000) translate(1273.000000, 668.000000)">
+                <polygon id="Triangle" fill="#A0C300" points="0 0 723.570248 328.489286 0 1287.69883"></polygon>
+                <polygon id="Triangle" fill="#FB5464" points="0 0 1328.13223 0 723.570248 328.489286"></polygon>
+                <polygon id="Triangle" fill="#F5CC3C" points="723.570248 328.489286 1047.27273 745.845238 379.239669 785.517857"></polygon>
+                <polygon id="Triangle" fill="#00AB6D" points="380.394907 785.517857 506.042436 1331.96218 85.6859504 1172.65291"></polygon>
+                <polygon id="Triangle" fill="#397CBB" points="1328.13223 0 1726.96863 421.786981 1118.67769 552.173153"></polygon>
+                <polygon id="Triangle" fill="#E5A000" points="1328.13223 0 1047.27273 745.845238 723.570248 328.489286"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

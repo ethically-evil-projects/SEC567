@@ -1,0 +1,115 @@
+
+/* ----- OPTION-020.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Droid+Sans";
+
+// Colors.
+$color-020-sea: #41AABA;
+$color-020-apple: #7CD3A0;
+$color-020-lime: #69D76D;
+$color-020-white: #FFFFFF;
+
+// Option 020.
+.option-020 {
+  @include background-cover;
+  background-image: url("/assets/images/020-background.jpg") !important;
+  font-family: "Droid Sans", sans-serif;
+
+  // Content.
+  .content {
+    @include rounded(3px);
+    background: none !important;
+    max-width: 500px;
+  }
+
+  // Link.
+  .link {
+    color: $color-020-lime;
+  }
+
+  // Header.
+  .header {
+    padding: 0 0 30px 0 !important;
+  }
+
+  // Image.
+  .image {
+    height: 120px;
+    width: 250px;
+  }
+
+  // Label.
+  .label {
+    color: $color-020-white;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    background: none;
+    border: solid 2px $color-020-white;
+    color: $color-019-white;
+
+    // Focus.
+    &:focus {
+      background: none;
+      border: solid 2px $color-020-white;
+      color: $color-019-white;
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+    margin: 0 0 20px 0;
+
+    // Label.
+    .label-remember {
+      background: none;
+      color: $color-020-white;
+    }
+
+    // Box.
+    .label-remember:before {
+      border: solid 2px $color-020-white;
+      top: 1px;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-020-lime;
+
+      // Before.
+      &:before {
+        border: solid 2px $color-020-lime;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-020-lime;
+      border: solid 2px $color-020-lime;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(0px);
+    background: $color-020-lime;
+    border: solid 1px $color-020-lime;
+    color: $color-020-white;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: darken($color-020-lime, 10%);
+      border: solid 1px darken($color-020-lime, 10%);
+    }
+  }
+
+  // Footer.
+  .footer {
+    color: $color-020-white;
+  }
+}

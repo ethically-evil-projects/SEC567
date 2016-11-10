@@ -1,0 +1,119 @@
+
+/* ----- OPTION-025.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+
+// Colors.
+$color-025-black: #000000;
+$color-025-white: #FFFFFF;
+$color-025-purple: #81779D;
+
+// Option 025.
+.option-025 {
+  @include background-cover;
+  background-image: url("/assets/images/025-background.jpg");
+  background-position: bottom right;
+  font-family: "Open Sans", sans-serif;
+
+  // Content.
+  .content {
+    background-color: $color-025-black !important;
+  }
+
+  // Link.
+  .link {
+    color: $color-025-purple;
+  }
+
+  // Header.
+  .header {
+    padding: 30px 0 0 0 !important;
+  }
+
+  // Image.
+  .image {
+    height: 250px;
+    width: 250px;
+  }
+
+  // Label.
+  .label {
+    color: $color-025-white;
+    font-size: $font-size - 2px;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    background: $color-025-black;
+    border: solid 1px $color-025-white;
+    color: $color-025-purple;
+    font-size: $font-size - 2px;
+
+    // Focus.
+    &:focus {
+      background: $color-025-black;
+      border: solid 1px $color-025-white;
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+    margin: 0 0 20px 0;
+
+    // Label.
+    .label-remember {
+      font-size: $font-size - 2px;
+    }
+
+    // Box.
+    .label-remember:before {
+      border: solid 2px $color-025-white;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-025-white;
+
+      // Before.
+      &:before {
+        border: solid 2px $color-025-purple;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-025-purple;
+      border: solid 2px $color-025-purple;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(4px);
+    background: $color-025-purple;
+    border: solid 1px $color-025-purple;
+    color: $color-025-white;
+    font-size: $font-size - 2px;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: $color-025-purple;
+      border: solid 1px $color-025-purple;
+    }
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 2px;
+  }
+
+  // Footer.
+  .footer {
+    color: $color-025-white;
+    font-size: $font-size - 2px;
+  }
+}

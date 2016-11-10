@@ -1,0 +1,111 @@
+
+/* ----- OPTION-023.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Rubik";
+
+// Colors.
+$color-023-burnt: #F46D2C;
+$color-023-sunblush: #FF8C00;
+$color-023-green: #1B2002;
+
+// Option 023.
+.option-023 {
+  @include background-cover;
+  background-image: url("/assets/images/023-background.jpg");
+  font-family: "Rubik", sans-serif;
+
+  // Content.
+  .content {
+    @include gradient-vertical(lighten($color-023-sunblush, 10%), $color-023-burnt);
+  }
+
+  // Link.
+  .link {
+    color: darken($color-023-burnt, 10%);
+  }
+
+  // Header.
+  .header {
+    padding: 0 0 30px 0 !important;
+  }
+
+  // Image.
+  .image {
+    height: 250px;
+    width: 250px;
+  }
+
+  // Label.
+  .label {
+    color: $color-023-green;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    background: darken($color-023-burnt, 10%);
+    border: solid 1px darken($color-023-burnt, 10%);
+    color: $color-023-green;
+
+    // Focus.
+    &:focus {
+      background: darken($color-023-burnt, 10%);
+      border: solid 1px darken($color-023-burnt, 10%);
+      color: $color-023-green;
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+    margin: 0 0 20px 0;
+
+    // Box.
+    .label-remember:before {
+      border: solid 1px $color-023-green;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-023-green;
+
+      // Before.
+      &:before {
+        border: solid 1px $color-023-green;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-023-green;
+      border: solid 1px $color-023-green;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(4px);
+    background: $color-023-green;
+    border: solid 1px $color-023-green;
+    color: $color-023-burnt;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: $color-023-green;
+      border: solid 1px $color-023-green;
+    }
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 1px;
+  }
+
+  // Footer.
+  .footer {
+    color: $color-023-green;
+    font-size: $font-size - 2px;
+  }
+}

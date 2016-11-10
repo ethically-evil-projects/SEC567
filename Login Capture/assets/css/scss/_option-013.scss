@@ -10,32 +10,26 @@ $color-013-grey: #8D939F;
 
 // Option 013.
 .option-013 {
-  background: $color-013-pink;
+  background-color: $color-013-pink;
+  background-image: url("/assets/images/013-background.svg");
+  background-repeat: repeat;
+  background-position: center center;
   font-family: "Sue Ellen Francisco", sans-serif;
 
   // Link.
   .link {
-    color: $color-013-pink;
+    color: lighten($color-013-grey, 15%);
   }
 
   // Header.
   .header {
-    padding: 100px 0 100px 0;
+    padding: 100px 0 50px 0;
   }
 
-  // Logo.
-  .logo {
-    font-size: $font-size + 20px !important;
-
-    // Highlight.
-    .highlight {
-      color: $color-013-pink;
-    }
-  }
-
-  // Heading.
-  .heading {
-    display: none;
+  // Image.
+  .image {
+    height: 120px;
+    width: 200px;
   }
 
   // Content.
@@ -129,9 +123,9 @@ $color-013-grey: #8D939F;
     font-size: $font-size + 3px;
     padding-bottom: 50px;
 
-    // Link.
-    .link {
-      color: lighten($color-013-grey, 15%);
+    // Extra.
+    .extra {
+      margin-bottom: 10px;
     }
   }
 

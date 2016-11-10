@@ -1,0 +1,130 @@
+
+/* ----- OPTION-021.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Slabo+27px";
+
+// Colors.
+$color-021-white: #FFFFFF;
+$color-021-pink: #EE6383;
+$color-021-purple: #A292C7;
+$color-021-mauve: #81779D;
+
+// Option 021.
+.option-021 {
+  @include background-cover;
+  background-image: url("/assets/images/021-background.jpg");
+  font-family: "Slabo 27px", sans-serif;
+
+  // Content.
+  .content {
+    @include rounded(2px);
+    background: rgba($color-021-mauve,0.8);
+    max-width: $max-width + 100px;
+  }
+
+  // Link.
+  .link {
+    color: $color-021-pink;
+  }
+
+  // Header.
+  .header {
+    padding: 20px 0 40px 0;
+  }
+
+  // Image.
+  .image {
+    height: 120px;
+    width: 250px;
+  }
+
+  // Field, remember.
+  .field-remember {
+
+    // Label.
+    .label-remember {
+      font-size: $font-size;
+    }
+
+    // Checkbox.
+    .label-remember:before {
+      border: solid 2px $color-021-white;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-021-pink;
+
+      // Before.
+      &:before {
+        border: solid 2px $color-021-pink;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-021-pink;
+      border: solid 2px $color-021-pink;
+    }
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    background: transparent;
+    border: solid 2px $color-021-white;
+    color: $color-021-white;
+
+    // Focus.
+    &:focus {
+      background: transparent;
+      border: solid 2px $color-021-pink;
+    }
+  }
+
+  // Actions.
+  .actions {
+    padding: 0 0 20px 0;
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(50px);
+    background: $color-021-pink;
+    border: solid 1px $color-021-pink;
+    font-size: $font-size - 1px;
+    padding: 20px;
+    text-transform: uppercase;
+  }
+
+  // Label.
+  .label {
+    color: $color-021-white;
+    font-size: $font-size + 1px;
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size + 1px;
+    padding: 10px;
+
+    // Extra.
+    .extra a {
+      border-bottom: solid 2px $color-021-pink;
+      color: $color-021-white !important;
+    }
+
+    // Extra, forgot.
+    .extra-forgot {
+      margin-bottom: 10px;
+    }
+  }
+
+  // Footer.
+  .footer {
+    color: $color-021-white;
+    font-size: $font-size;
+    padding: 20px 0 10px 0;
+  }
+}

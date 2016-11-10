@@ -12,13 +12,13 @@ $color-015-white: #FFFFFF;
 
 // Option 015.
 .option-015 {
-  background: $color-015-grey;
+  background: darken($color-015-grey, 5%);
   font-family: "Assistant", sans-serif;
 
   // Content.
   .content {
     @include box-shadow-even;
-    @include rounded(6px);
+    background: $color-015-white;
   }
 
   // Link.
@@ -31,15 +31,10 @@ $color-015-white: #FFFFFF;
     padding: 0 0 30px 0 !important;
   }
 
-  // PNG.
-  .png {
+  // Image.
+  .image {
     height: 120px;
     width: 200px;
-  }
-
-  // Heading.
-  .heading {
-    display: none;
   }
 
   // Label.
@@ -58,16 +53,16 @@ $color-015-white: #FFFFFF;
   // Inputs, text.
   .input-email,
   .input-password {
-    background: $color-015-grey;
-    border: solid 1px $color-015-grey;
+    background: $color-015-white;
+    border: solid 1px $color-015-white;
     color: $color-015-blue;
     padding-left: 45px;
     padding-right: 90px;
 
     // Focus.
     &:focus {
-      background: $color-015-grey;
-      border: solid 1px $color-015-grey;
+      background: $color-015-white;
+      border: solid 1px $color-015-white;
       color: $color-015-blue;
     }
   }

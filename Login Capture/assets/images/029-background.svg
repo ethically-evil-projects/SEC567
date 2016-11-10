@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="50px" viewBox="0 0 70 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>029-background</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="001" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="029-background" stroke="#F8F8F8" stroke-width="2.8">
+            <g id="Group" transform="translate(11.000000, 15.000000)">
+                <path d="M20.25,10.5 C20.25,16.1477778 15.7725,20.7222222 10.25,20.7222222 C4.725,20.7222222 0.25,16.1477778 0.25,10.5 C0.25,4.85477778 4.725,0.277777778 10.25,0.277777778 C15.7725,0.277777778 20.25,4.85477778 20.25,10.5 L20.25,10.5 Z" id="Stroke-621"></path>
+                <path d="M27.75,10.5 C27.75,16.1477778 32.225,20.7222222 37.75,20.7222222 C43.2725,20.7222222 47.75,16.1477778 47.75,10.5 C47.75,4.85477778 43.2725,0.277777778 37.75,0.277777778 C32.225,0.277777778 27.75,4.85477778 27.75,10.5 L27.75,10.5 Z" id="Stroke-622"></path>
+                <path d="M20.25,10.5 C20.25,8.384 21.9275,6.66666667 24,6.66666667 C26.0675,6.66666667 27.75,8.384 27.75,10.5" id="Stroke-623"></path>
+            </g>
+        </g>
+    </g>
+</svg>

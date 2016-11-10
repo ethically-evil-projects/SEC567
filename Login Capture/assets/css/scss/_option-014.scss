@@ -21,8 +21,8 @@ $color-014-white: #FFFFFF;
     color: $color-014-blue;
   }
 
-  // PNG.
-  .png {
+  // Image.
+  .image {
     height: 120px;
     width: 200px;
   }
@@ -82,16 +82,16 @@ $color-014-white: #FFFFFF;
   // Inputs, text.
   .input-email,
   .input-password {
-    background: $color-014-grey;
-    border: solid 2px $color-014-grey;
+    background: $color-014-white;
+    border: solid 2px $color-014-white;
     color: $color-014-navy;
     height: 64px;
     padding: 18px;
 
     // Focus.
     &:focus {
-      background: $color-014-grey;
-      border: solid 2px $color-014-grey;
+      background: $color-014-white;
+      border: solid 2px $color-014-white;
     }
   }
 

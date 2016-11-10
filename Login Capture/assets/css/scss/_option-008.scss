@@ -7,10 +7,11 @@
 // Colors.
 $color-008-yellow: #F7CB1B;
 $color-008-grey: #D2DCE5;
+$color-008-white: #FFFFFF;
 
 // Option 008.
 .option-008 {
-  background: $color-primary-white;
+  background: $color-008-white;
   font-family: "Roboto", sans-serif;
 
   // Link.
@@ -29,17 +30,11 @@ $color-008-grey: #D2DCE5;
     background: $color-008-yellow;
     margin: 0 0 80px 0;
     padding: 30px;
-
-    // PNG.
-    .png {
-      width: 500px;
-    }
   }
 
-  // Heading.
-  .heading {
-    font-weight: 700;
-    text-align: left;
+  // Image.
+  .image {
+    width: 500px;
   }
 
   // Form.

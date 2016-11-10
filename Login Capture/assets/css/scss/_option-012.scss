@@ -8,10 +8,11 @@
 $color-012-yellow: #FBB52D;
 $color-012-blue: #303A48;
 $color-012-grey: #A5A8AC;
+$color-012-white: #FFFFFF;
 
 // Option 012.
 .option-012 {
-  background: $color-primary-white;
+  background: $color-012-white;
   font-family: "Share", sans-serif;
 
   // Link.
@@ -19,43 +20,30 @@ $color-012-grey: #A5A8AC;
     color: $color-012-yellow;
   }
 
-  // PNG.
-  .png {
+  // Image.
+  .image {
     height: 100px;
     width: 200px;
   }
 
   // Content.
   .content {
-    max-width: $max-width + 100px !important;
+    max-width: $max-width + 100px;
   }
 
   // Form.
   .form {
     @include background-cover;
     @include box-shadow-even;
-    //background: $color-012-blue !important;
     background-image: url("/assets/images/012-background.jpg") !important;
     background-repeat: repeat;
     background-position: center center;
-    padding: 80px !important;
+    padding: 120px 80px 80px 80px !important;
 
     // Responsive.
     @media screen and (max-width: 650px) {
       padding: 30px !important;
     }
-  }
-
-  // Heading.
-  .heading {
-    @include inline-block;
-    border-bottom: solid 2px $color-012-yellow;
-    color: $color-primary-white;
-    font-size: $font-size + 2px;
-    margin: 0 0 50px 0;
-    padding: 0 0 5px 0;
-    text-align: left;
-    text-transform: uppercase;
   }
 
   // Field, remember.
@@ -95,7 +83,7 @@ $color-012-grey: #A5A8AC;
     background: none;
     border: none;
     border-bottom: solid 2px $color-012-grey;
-    color: $color-primary-white;
+    color: $color-012-white;
 
     // Focus.
     &:focus {

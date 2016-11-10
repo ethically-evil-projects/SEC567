@@ -1,0 +1,132 @@
+
+/* ----- OPTION-030.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Droid+San";
+
+// Colors.
+$color-030-blue: #B3CECA;
+$color-030-green: #6B7D7A;
+$color-030-red: #A3424E;
+$color-030-white: #FFFFFF;
+
+// Option 030.
+.option-030 {
+  @include background-cover;
+  background-color: $color-030-blue;
+  background-image: url("/assets/images/030-background.jpg") !important;
+  background-repeat: repeat;
+  background-position: center center;
+  font-family: "Droid Sans", sans-serif;
+
+  // Content.
+  .content {
+    max-width: $max-width + 20px;
+    padding: 40px;
+  }
+
+  // Link.
+  .link {
+    color: $color-030-red;
+  }
+
+  // Header.
+  .header {
+    padding: 0 0 30px 0 !important;
+  }
+
+  // Image.
+  .image {
+    height: 120px;
+    width: 200px;
+  }
+
+  // Label.
+  .label {
+    color: lighten($color-030-green, 30%);
+    font-size: $font-size - 1px;
+    position: absolute; top: 15px; left: 20px;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    @include rounded(3px);
+    background: $color-030-green;
+    border: solid 1px $color-030-green;
+    color: $color-030-white;
+    font-size: $font-size - 1px;
+    padding-right: 45px;
+    padding-left: 90px;
+
+    // Focus.
+    &:focus {
+      background: $color-030-green;
+      border: solid 1px $color-030-green;
+      color: $color-030-white;
+    }
+  }
+
+  // Field, password.
+  .field-password {
+    padding: 0;
+  }
+
+  // Field, remember.
+  .field-remember {
+    margin: 0 0 20px 0;
+
+    // Label.
+    .label-remember {
+      color: $color-030-green;
+    }
+
+    // Box.
+    .label-remember:before {
+      border: solid 1px $color-030-green;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-030-green;
+
+      // Before.
+      &:before {
+        border: solid 1px $color-030-red;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-030-red;
+      border: solid 1px $color-030-red;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(3px);
+    background: $color-030-red;
+    border: solid 1px $color-030-red;
+    color: lighten($color-030-red, 30%);
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: $color-030-red;
+      border: solid 1px $color-030-red;
+    }
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 1px;
+  }
+
+  // Footer.
+  .footer {
+    color: $color-030-green;
+    font-size: $font-size - 1px;
+  }
+}

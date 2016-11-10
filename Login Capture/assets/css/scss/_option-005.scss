@@ -2,22 +2,23 @@
 /* ----- OPTION-005.scss ----- */
 
 // Fonts.
-@import "https://fonts.googleapis.com/css?family=Cabin+Condensed";
+@import "https://fonts.googleapis.com/css?family=Fira+Sans";
 
 // Colors.
 $color-005-brown: #724644;
 $color-005-blue: #343F67;
 $color-005-grey: #8D939F;
+$color-004-black: #000000;
 
 // Option 005.
 .option-005 {
   @include background-cover;
   background-image: url("/assets/images/005-background.jpg");
-  font-family: "Cabin Condensed", sans-serif;
+  font-family: "Fira Sans", sans-serif;
 
   // Link.
   .link {
-    color: $color-005-brown;
+    color: lighten($color-005-grey, 15%);
   }
 
   // Header.
@@ -27,7 +28,7 @@ $color-005-grey: #8D939F;
 
   // Form.
   .form {
-    @include box-shadow-even(50px, $color-primary-black, 1.0);
+    @include box-shadow-even(50px, $color-004-black, 1.0);
   }
 
   // Panel.
@@ -37,15 +38,10 @@ $color-005-grey: #8D939F;
     background-position: top right;
   }
 
-  // PNG.
-  .png {
+  // Image.
+  .image {
     height: 90px;
     width: 200px;
-  }
-
-  // Heading.
-  .heading {
-    margin-bottom: 0;
   }
 
   // Field, email.
@@ -115,16 +111,13 @@ $color-005-grey: #8D939F;
 
   // Extras.
   .extras {
-
-    // Link.
-    .link {
-      color: lighten($color-005-grey, 15%);
-    }
+    font-size: $font-size - 1px;
   }
 
   // Footer.
   .footer {
     color: lighten($color-005-grey, 25%);
+    font-size: $font-size - 1px;
     opacity: 0.5;
   }
 }

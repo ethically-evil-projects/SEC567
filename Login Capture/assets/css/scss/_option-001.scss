@@ -7,11 +7,11 @@
 // Colors.
 $color-001-grey: #D2DCE5;
 $color-001-blue: #38A4E3;
-$color-001-red: #C74353;
+$color-001-white: #FFFFFF;
 
 // Option 001.
 .option-001 {
-  background: $color-primary-white;
+  background: $color-001-white;
   font-family: "Assistant", sans-serif;
 
   // Link.
@@ -19,8 +19,8 @@ $color-001-red: #C74353;
     color: $color-001-blue;
   }
 
-  // SVG.
-  .svg {
+  // Image.
+  .image {
     height: 90px;
     width: 150px;
   }
@@ -29,7 +29,6 @@ $color-001-red: #C74353;
   .form {
     @include rounded(3px);
     border: solid 1px $color-001-grey;
-    max-width: $max-width + 200px;
   }
 
   // Field, remember.

@@ -1,0 +1,109 @@
+
+/* ----- OPTION-027.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=PT+Sans";
+
+// Colors.
+$color-027-black: #000000;
+$color-027-white: #F2F2F2;
+$color-027-orange: #E5A000;
+
+// Option 027.
+.option-027 {
+  @include background-cover;
+  background-image: url("/assets/images/027-background.svg");
+  font-family: "PT Sans", sans-serif;
+
+  // Link.
+  .link {
+    color: $color-027-black;
+  }
+
+  // Header.
+  .header {
+    padding: 100px 0 0 0;
+  }
+
+  // Form.
+  .form {
+    background: none !important;
+  }
+
+  // Image.
+  .image {
+    height: 200px;
+    width: 300px;
+  }
+
+  // Field, email.
+  .field-email {
+    padding-top: 20px;
+  }
+
+  // Label.
+  .label {
+    color: $color-027-black;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    background: $color-027-white;
+    border: solid 2px $color-027-black;
+    color: $color-027-black;
+
+    // Focus.
+    &:focus {
+      background: $color-027-white;
+      border: solid 2px $color-027-black;
+      color: $color-027-black;
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+
+    // Box.
+    .label-remember:before {
+      border: solid 2px $color-027-black;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-027-black;
+
+      // Before.
+      &:before {
+        border: solid 2px $color-027-black;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-027-black;
+      border: solid 2px $color-027-black;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(6px);
+    background: $color-027-black;
+    border: solid 1px $color-027-black;
+    color: $color-027-white;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: $color-027-black;
+      border: solid 1px $color-027-black;
+    }
+  }
+
+  // Footer.
+  .footer {
+    color: $color-027-black;
+  }
+}

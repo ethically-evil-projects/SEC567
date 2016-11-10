@@ -5,20 +5,18 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans";
 
 // Colors.
-$color-008-yellow: #F7CB1B;
-$color-008-grey: #D2DCE5;
-
 $color-009-red: #BD586B;
 $color-009-orange: #E5756E;
+$color-009-white: #FFFFFF;
 
 // Option 009.
 .option-009 {
-  @include gradient-vertical(lighten($color-009-orange, 2%), darken($color-009-red, 6%));
+  @include gradient-vertical(lighten($color-009-orange, 5%), darken($color-009-red, 6%));
   font-family: "Open Sans", sans-serif;
 
   // Link.
   .link {
-    color: $color-primary-white;
+    color: $color-009-white;
   }
 
   // Content.
@@ -30,16 +28,11 @@ $color-009-orange: #E5756E;
   // Header.
   .header {
     padding: 50px 30px 10px 30px;
-
-    // PNG.
-    .png {
-      width: 200px;
-    }
   }
 
-  // Heading.
-  .heading {
-    display: none;
+  // Image.
+  .image {
+    width: 200px;
   }
 
   // Form.
@@ -54,11 +47,11 @@ $color-009-orange: #E5756E;
 
     // Label.
     .label-remember {
-      color: $color-primary-white;
+      color: $color-009-white;
 
       // Before.
       &:before {
-        border: solid 2px $color-primary-white;
+        border: solid 2px $color-009-white;
       }
     }
 
@@ -83,8 +76,8 @@ $color-009-orange: #E5756E;
   .input-email,
   .input-password {
     background: none !important;
-    border: solid 2px $color-primary-white;
-    color: $color-primary-white;
+    border: solid 2px $color-009-white;
+    color: $color-009-white;
 
     // Focus.
     &:focus {
@@ -95,15 +88,15 @@ $color-009-orange: #E5756E;
   // Btn.
   .btn, a.btn, input[type="submit"].btn {
     @include rounded(3px);
-    background: $color-primary-white;
+    background: $color-009-white;
     color: $color-009-red;
-    border: solid 1px $color-primary-white;
+    border: solid 1px $color-009-white;
     padding: 20px;
   }
 
   // Label.
   .label {
-    color: $color-primary-white;
+    color: $color-009-white;
     font-size: $font-size - 1px;
   }
 
@@ -114,11 +107,11 @@ $color-009-orange: #E5756E;
 
   // Footer.
   .footer {
-    color: $color-primary-white;
+    color: $color-009-white;
     font-size: $font-size - 1px;
     margin: 0 auto 0 auto;
     max-width: $max-width + 160px;
-    opacity: 0.2;
+    opacity: 0.4;
     padding: 0 30px 0 30px;
   }
 }

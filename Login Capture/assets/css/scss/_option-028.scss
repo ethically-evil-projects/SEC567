@@ -1,0 +1,127 @@
+
+/* ----- OPTION-028.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+
+// Colors.
+$color-028-black: #000000;
+$color-028-white: #FFFFFF;
+$color-028-blue: #7F96AD;
+
+// Option 028.
+.option-028 {
+  @include background-cover;
+  background-color: $color-028-white;
+  background-image: url("/assets/images/028-background.svg");
+  font-family: "Montserrat", sans-serif;
+
+  // Link.
+  .link {
+    color: $color-028-blue;
+  }
+
+  // Header.
+  .header {
+    padding: 50px 0 0 0;
+  }
+
+  // Form.
+  .form {
+    background: none !important;
+  }
+
+  // Image.
+  .image {
+    height: 300px;
+    width: 300px;
+  }
+
+  // Field, email.
+  .field-email {
+    padding-top: 20px;
+  }
+
+  // Label.
+  .label {
+    color: $color-028-blue;
+    font-size: $font-size - 2px;
+    text-align: center;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    @include rounded(50px);
+    background: $color-028-white;
+    border: solid 2px $color-028-blue;
+    color: $color-028-blue;
+    font-size: $font-size - 2px;
+    padding: 8px 20px 8px 20px;
+
+    // Focus.
+    &:focus {
+      background: $color-028-white;
+      border: solid 2px $color-028-blue;
+      color: $color-028-blue;
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+
+    // Label.
+    .label-remember {
+      font-size: $font-size - 2px;
+    }
+
+    // Box.
+    .label-remember:before {
+      border: solid 2px $color-028-blue;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-028-blue;
+
+      // Before.
+      &:before {
+        border: solid 2px $color-028-blue;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-028-blue;
+      border: solid 2px $color-028-blue;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(50px);
+    background: $color-028-blue;
+    border: solid 1px $color-028-blue;
+    color: $color-028-white;
+    font-size: $font-size - 2px;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: $color-028-blue;
+      border: solid 1px $color-028-blue;
+    }
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 2px;
+  }
+
+  // Footer.
+  .footer {
+    color: $color-028-blue;
+    font-size: $font-size - 2px;
+  }
+}

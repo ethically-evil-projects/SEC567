@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>013-background</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="001" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="013-background" stroke="#CB4974">
+            <g id="Stroke-4966-+-Stroke-4967-+-Stroke-4968" transform="translate(24.500000, 25.000000) rotate(-315.000000) translate(-24.500000, -25.000000) translate(18.000000, 13.000000)">
+                <path d="M6.5,17.5 L6.5,23.5" id="Stroke-4966"></path>
+                <path d="M0.5,6.5 C0.5,3.187 3.187,0.5 6.5,0.5 C9.813,0.5 12.5,3.187 12.5,6.5 L12.5,17.5 L0.5,17.5 L0.5,6.5 L0.5,6.5 Z" id="Stroke-4967"></path>
+                <path d="M0.5,7.5 L12.5,7.5" id="Stroke-4968"></path>
+            </g>
+        </g>
+    </g>
+</svg>

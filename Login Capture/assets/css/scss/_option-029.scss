@@ -1,0 +1,119 @@
+
+/* ----- OPTION-029.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Rubik";
+
+// Colors.
+$color-029-white: #FFFFFF;
+$color-029-black: #000000;
+$color-029-purple: #C4A2BC;
+
+// Option 029.
+.option-029 {
+  background-color: $color-029-white;
+  background-image: url("/assets/images/029-background.svg");
+  background-repeat: repeat;
+  background-position: center center;
+  font-family: "Rubik", sans-serif;
+
+  // Link.
+  .link {
+    color: $color-029-purple;
+  }
+
+  // Header.
+  .header {
+    padding: 0 !important;
+  }
+
+  // Form.
+  .form {
+    @include box-shadow-even(20px, $color-029-black, 1.0);
+  }
+
+  // Panel.
+  .form:after {
+    @include background-cover;
+    background-image: url("/assets/images/029-content.jpg");
+    background-position: top right;
+  }
+
+  // Image.
+  .image {
+    height: 200px;
+    width: 300px;
+  }
+
+  // Field, email.
+  .field-email {
+    padding-top: 20px;
+  }
+
+  // Label.
+  .label {
+    color: $color-029-black;
+    font-size: $font-size - 1px;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    @include rounded(3px);
+    border: solid 2px $color-029-purple;
+    color: $color-029-black;
+
+    // Focus.
+    &:focus {
+      border: solid 2px $color-029-purple;
+      color: $color-029-black;
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+
+    // Box.
+    .label-remember:before {
+      border: solid 2px $color-029-purple;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-029-purple;
+
+      // Before.
+      &:before {
+        border: solid 2px $color-029-purple;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-029-purple;
+      border: solid 2px $color-029-purple;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(3px);
+    background: $color-029-purple;
+    border: solid 2px $color-029-purple;
+    font-size: $font-size + 1px;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: $color-029-purple;
+      border: solid 2px $color-029-purple;
+    }
+  }
+
+  // Footer.
+  .footer {
+    color: $color-029-black;
+    opacity: 0.2;
+  }
+}

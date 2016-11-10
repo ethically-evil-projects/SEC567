@@ -1,0 +1,123 @@
+
+/* ----- OPTION-017.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Baloo+Bhaina";
+
+// Colors.
+$color-017-navy: #0B436D;
+$color-017-water: #4E9EE7;
+$color-017-sky: #9ECDF7;
+$color-017-white: #FFFFFF;
+
+// Option 017.
+.option-017 {
+  background: $color-017-navy;
+  font-family: "Baloo Bhaina", sans-serif;
+
+  // Content.
+  .content {
+    @include rounded(14px);
+    background: $color-017-water !important;
+  }
+
+  // Link.
+  .link {
+    color: $color-017-sky;
+  }
+
+  // Header.
+  .header {
+    padding: 0 0 30px 0 !important;
+  }
+
+  // Image.
+  .image {
+    height: 200px;
+    width: 250px;
+  }
+
+  // Label.
+  .label {
+    color: $color-017-sky;
+    position: absolute; top: 15px; left: 20px;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    @include rounded(24px);
+    background: $color-017-water;
+    border: solid 2px $color-017-sky;
+    color: $color-017-sky;
+    padding-right: 20px;
+    padding-left: 100px;
+
+    // Focus.
+    &:focus {
+      background: $color-017-water;
+      border: solid 2px $color-017-sky;
+      color: $color-017-white;
+    }
+  }
+
+  // Field, password.
+  .field-password {
+    padding: 0;
+  }
+
+  // Field, remember.
+  .field-remember {
+    margin: 0 0 20px 0;
+
+    // Box.
+    .label-remember:before {
+      @include rounded(5px);
+      border: solid 2px $color-017-white;
+      top: 0px;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-017-sky;
+
+      // Before.
+      &:before {
+        border: solid 2px $color-017-sky;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-017-sky;
+      border: solid 2px $color-017-sky;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(34px);
+    background: $color-017-sky;
+    border: solid 1px $color-017-sky;
+    color: $color-017-navy;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: darken($color-017-sky, 10%);
+      border: solid 1px darken($color-017-sky, 10%);
+    }
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 1px;
+  }
+
+  // Footer.
+  .footer {
+    color: $color-017-sky;
+    font-size: $font-size - 2px;
+  }
+}

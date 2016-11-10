@@ -2,22 +2,21 @@
 /* ----- OPTION-003.scss ----- */
 
 // Fonts.
-@import "https://fonts.googleapis.com/css?family=Quicksand";
+@import "https://fonts.googleapis.com/css?family=Titillium+Web";
 
 // Colors.
-$color-003-pink: #D5BEBF;
+$color-003-white: #FFFFFF;
 $color-003-blue: #084B85;
 
-// Option 001.
+// Option 003.
 .option-003 {
   @include background-cover;
   background-image: url("/assets/images/003-background.jpg");
-  font-family: "Quicksand", sans-serif;
+  font-family: "Titillium Web", sans-serif;
 
   // Content.
   .content {
-    border-top: solid 5px $color-003-pink;
-    border-bottom: solid 5px $color-003-pink;
+    background: rgba($color-003-white, 0.3);
     max-width: $max-width + 100px;
   }
 
@@ -31,28 +30,34 @@ $color-003-blue: #084B85;
     padding: 20px 0 20px 0;
   }
 
-  // SVG.
-  .svg {
+  // Image.
+  .image {
     height: 120px;
     width: 200px;
   }
 
-  // Heading.
-  .heading {
-    display: none;
+  // Label.
+  .label {
+    color: $color-003-blue;
   }
 
   // Field, remember.
   .field-remember {
 
+    // Label.
+    .label-remember {
+      font-size: $font-size;
+    }
+
     // Checkbox.
     .label-remember:before {
-      border: solid 1px $color-003-pink;
+      border: solid 1px $color-003-blue;
+      margin-top: 2px;
     }
 
     // Hover.
     .label-remember:hover {
-      color: $color-003-pink;
+      color: $color-003-blue;
 
       // Before.
       &:before {
@@ -70,7 +75,9 @@ $color-003-blue: #084B85;
   // Inputs, text.
   .input-email,
   .input-password {
-    border: solid 1px $color-003-pink;
+    background: transparent;
+    border: solid 1px $color-003-blue;
+    color: $color-003-blue;
 
     // Focus.
     &:focus {
@@ -93,22 +100,14 @@ $color-003-blue: #084B85;
     text-transform: uppercase;
   }
 
-  // Label.
-  .label {
-    color: $color-003-pink;
-    font-size: $font-size - 1px;
-  }
-
   // Extras.
   .extras {
-    font-size: $font-size - 1px;
     padding: 10px;
   }
 
   // Footer.
   .footer {
-    color: $color-003-pink;
-    font-size: $font-size - 2px;
+    color: $color-003-blue;
     padding: 20px 0 10px 0;
   }
 }

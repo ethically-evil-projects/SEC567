@@ -19,20 +19,10 @@ $color-006-grey: #8D939F;
     color: $color-006-pink;
   }
 
-  // Logo.
-  .logo {
-    font-style: italic;
-    font-weight: 700;
-
-    // Dot.
-    .dot {
-      color: $color-006-pink;
-    }
-  }
-
-  // Heading.
-  .heading {
-    display: none;
+  // Image.
+  .image {
+    height: 90px;
+    width: 200px;
   }
 
   // Label.
@@ -100,15 +90,10 @@ $color-006-grey: #8D939F;
   .extras {
     font-size: $font-size - 1px;
     padding-bottom: 50px;
-
-    // Link.
-    .link {
-      color: lighten($color-006-grey, 15%);
-    }
   }
 
   // Footer.
   .footer {
-    display: none;
+    color: lighten($color-006-grey, 15%);
   }
 }

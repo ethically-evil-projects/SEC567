@@ -1,0 +1,121 @@
+
+/* ----- OPTION-019.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=PT+Sans";
+
+// Colors.
+$color-019-purple: #65469F;
+$color-019-green: #00D47E;
+$color-019-white: #FFFFFF;
+
+// Option 019.
+.option-019 {
+  background: darken($color-019-purple, 12%);
+  font-family: "PT Sans", sans-serif;
+
+  // Content.
+  .content {
+    @include rounded(3px);
+    background: $color-019-purple !important;
+    max-width: 500px;
+  }
+
+  // Link.
+  .link {
+    color: $color-019-green;
+  }
+
+  // Header.
+  .header {
+    padding: 0 0 30px 0 !important;
+  }
+
+  // Image.
+  .image {
+    height: 250px;
+    width: 250px;
+  }
+
+  // Label.
+  .label {
+    @include inline-block;
+    background: darken($color-019-purple, 12%);
+    color: lighten($color-019-purple, 15%);
+    margin: 0 0 5px 0;
+    padding: 5px;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    background: none;
+    border: none;
+    border-top: solid 2px $color-019-white;
+    color: $color-019-white;
+    padding: 10px 0 10px 0;
+
+    // Focus.
+    &:focus {
+      background: none;
+      border: none;
+      border-top: solid 2px $color-019-white;
+      color: $color-019-white;
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+    margin: 0 0 20px 0;
+
+    // Label.
+    .label-remember {
+      background: none;
+      color: lighten($color-019-purple, 25%);
+    }
+
+    // Box.
+    .label-remember:before {
+      @include rounded(100%);
+      border: solid 2px lighten($color-019-purple, 25%);
+      top: 1px;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-019-white;
+
+      // Before.
+      &:before {
+        border: solid 2px $color-019-green;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-019-green;
+      border: solid 2px $color-019-green;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(3px);
+    background: $color-019-green;
+    border: solid 1px $color-019-green;
+    color: $color-019-white;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: darken($color-019-green, 10%);
+      border: solid 1px darken($color-019-green, 10%);
+    }
+  }
+
+  // Footer.
+  .footer {
+    color: $color-019-white;
+  }
+}

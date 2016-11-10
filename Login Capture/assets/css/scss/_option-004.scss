@@ -8,17 +8,17 @@
 $color-004-grey: #D2DCE5;
 $color-004-black: #232D38;
 $color-004-green: #1EBA6B;
-$color-004-orange: #FE5707;
+$color-004-white: #FFFFFF;
 
 // Option 004.
 .option-004 {
-  background: $color-primary-white;
+  background: $color-004-white;
   font-family: "Assistant", sans-serif;
 
   // Content.
   .content {
     @include rounded(4px);
-    background: $color-004-black !important;
+    background: $color-004-black;
   }
 
   // Link.
@@ -31,34 +31,29 @@ $color-004-orange: #FE5707;
     padding: 0 0 30px 0 !important;
   }
 
-  // SVG.
-  .svg {
+  // Image.
+  .image {
     height: 180px;
     width: 200px;
   }
 
-  // Heading.
-  .heading {
-    display: none;
-  }
-
   // Label.
   .label {
-    color: $color-primary-white;
+    color: $color-004-white;
     font-size: $font-size - 1px;
   }
 
   // Inputs, text.
   .input-email,
   .input-password {
-    border: solid 1px $color-primary-white;
+    border: solid 1px $color-004-white;
     color: $color-004-black;
 
     // Focus.
     &:focus {
       background: $color-004-green;
       border: solid 1px $color-004-green;
-      color: $color-primary-white;
+      color: $color-004-white;
     }
   }
 
@@ -67,7 +62,7 @@ $color-004-orange: #FE5707;
 
     // Box.
     .label-remember:before {
-      border: solid 2px $color-primary-white;
+      border: solid 2px $color-004-white;
     }
 
     // Hover.
@@ -109,7 +104,7 @@ $color-004-orange: #FE5707;
 
   // Extras.
   .extras {
-    background: $color-primary-white;
+    background: $color-004-white;
     font-size: $font-size - 1px;
     margin: 0 -30px -30px -30px;
     padding: 30px;
@@ -117,7 +112,7 @@ $color-004-orange: #FE5707;
 
   // Footer.
   .footer {
-    background: $color-primary-white;
+    background: $color-004-white;
     color: $color-004-grey;
     font-size: $font-size - 1px;
     margin: 0 -30px -30px -30px;

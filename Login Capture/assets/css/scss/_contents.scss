@@ -4,17 +4,70 @@
 // Contents.
 .contents {
   margin: 100px auto 100px auto;
-  max-width: 300px;
+  max-width: 900px;
   width: 90%;
 
   // Title.
   .title {
-    font-size: $font-size + 4px;
+    font-size: $font-size + 2px;
+    font-weight: bold;
+  }
+
+  // Items.
+  .items {
+    @include clearfix;
   }
 
   // Item.
   .item {
+    border-top: solid 100px $color-primary-black;
+    color: $color-grey-prime;
     display: block;
-    margin: 0 0 10px 0;
+    float: left;
+    margin: 0 2% 30px 0;
+    padding: 15px 0 0 0;
+    width: 18%;
+
+    // Responsive.
+    @media screen and (max-width: 650px) {
+      width: 48%;
+    }
+
+    // Hover.
+    &:hover {
+      color: $color-grey-lightest;
+    }
+
+    // Items.
+    &.item-001 {border-top: solid 100px $color-001-blue;}
+    &.item-002 {border-top: solid 100px $color-002-green;}
+    &.item-003 {border-top: solid 100px $color-003-blue;}
+    &.item-004 {border-top: solid 100px $color-004-green;}
+    &.item-005 {border-top: solid 100px $color-005-brown;}
+    &.item-006 {border-top: solid 100px $color-006-pink;}
+    &.item-007 {border-top: solid 100px $color-007-red;}
+    &.item-008 {border-top: solid 100px $color-008-yellow;}
+    &.item-009 {border-top: solid 100px $color-009-red;}
+    &.item-010 {border-top: solid 100px $color-010-purple;}
+    &.item-011 {border-top: solid 100px $color-011-mint;}
+    &.item-012 {border-top: solid 100px $color-012-yellow;}
+    &.item-013 {border-top: solid 100px $color-013-pink;}
+    &.item-014 {border-top: solid 100px $color-014-blue;}
+    &.item-015 {border-top: solid 100px $color-015-yellow;}
+    &.item-016 {border-top: solid 100px $color-016-lime;}
+    &.item-017 {border-top: solid 100px $color-017-water;}
+    &.item-018 {border-top: solid 100px $color-018-yellow}
+    &.item-019 {border-top: solid 100px $color-019-purple;}
+    &.item-020 {border-top: solid 100px $color-020-lime;}
+    &.item-021 {border-top: solid 100px $color-021-pink;}
+    &.item-022 {border-top: solid 100px $color-022-red;}
+    &.item-023 {border-top: solid 100px $color-023-burnt;}
+    &.item-024 {border-top: solid 100px $color-024-blue;}
+    &.item-025 {border-top: solid 100px $color-025-purple;}
+    &.item-026 {border-top: solid 100px $color-026-pink;}
+    &.item-027 {border-top: solid 100px $color-027-orange;}
+    &.item-028 {border-top: solid 100px $color-028-blue;}
+    &.item-029 {border-top: solid 100px $color-029-purple;}
+    &.item-030 {border-top: solid 100px $color-030-blue;}
   }
 }

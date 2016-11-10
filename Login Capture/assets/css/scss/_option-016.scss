@@ -1,0 +1,127 @@
+
+/* ----- OPTION-016.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Droid+San";
+
+// Colors.
+$color-016-brown: #222221;
+$color-016-lime: #A6AF1C;
+$color-016-white: #FFFFFF;
+
+// Option 016.
+.option-016 {
+  background: $color-016-lime;
+  font-family: "Droid Sans", sans-serif;
+
+  // Content.
+  .content {
+    @include background-cover;
+    @include box-shadow-even(50px, darken($color-016-lime, 70%), 1);
+    background-image: url("/assets/images/016-background.jpg") !important;
+    background-repeat: repeat;
+    background-position: center center;
+    border-top: solid 6px $color-016-white;
+    max-width: $max-width + 20px;
+    padding: 40px;
+  }
+
+  // Link.
+  .link {
+    color: $color-016-lime;
+  }
+
+  // Header.
+  .header {
+    padding: 0 0 30px 0 !important;
+  }
+
+  // Image.
+  .image {
+    height: 120px;
+    width: 200px;
+  }
+
+  // Label.
+  .label {
+    color: $color-016-white;
+    font-size: $font-size - 1px;
+    position: absolute; top: 15px; left: 20px;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    @include rounded(3px);
+    background: $color-016-brown;
+    border: solid 1px $color-016-brown;
+    color: $color-016-white;
+    font-size: $font-size - 1px;
+    padding-right: 45px;
+    padding-left: 90px;
+
+    // Focus.
+    &:focus {
+      background: $color-016-brown;
+      border: solid 1px $color-016-brown;
+      color: $color-016-white;
+    }
+  }
+
+  // Field, password.
+  .field-password {
+    padding: 0;
+  }
+
+  // Field, remember.
+  .field-remember {
+    margin: 0 0 20px 0;
+
+    // Box.
+    .label-remember:before {
+      border: solid 1px $color-016-white;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-016-lime;
+
+      // Before.
+      &:before {
+        border: solid 1px $color-016-lime;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-016-lime;
+      border: solid 1px $color-016-lime;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(3px);
+    background: $color-016-lime;
+    border: solid 1px $color-016-lime;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: darken($color-016-lime, 10%);
+      border: solid 1px darken($color-016-lime, 10%);
+    }
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 1px;
+  }
+
+  // Footer.
+  .footer {
+    color: $color-016-white;
+    font-size: $font-size - 1px;
+  }
+}

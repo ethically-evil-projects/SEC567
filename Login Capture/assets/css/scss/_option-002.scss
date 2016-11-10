@@ -7,7 +7,6 @@
 // Colors.
 $color-002-white: #FFFFFF;
 $color-002-green: #26AE90;
-$color-002-red: #CC5863;
 
 // Option 002.
 .option-002 {
@@ -19,15 +18,10 @@ $color-002-red: #CC5863;
     color: lighten($color-002-green, 20%);
   }
 
-  // SVG.
-  .svg {
+  // Image.
+  .image {
     height: 200px;
     width: 200px;
-  }
-
-  // Heading.
-  .heading {
-    color: $color-002-white;
   }
 
   // Header.

@@ -1,0 +1,109 @@
+
+/* ----- OPTION-026.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=PT+Sans";
+
+// Colors.
+$color-026-white: #FFFFFF;
+$color-026-black: #000000;
+$color-026-purple: #8B3AA2;
+$color-026-pink: #F2499D;
+
+// Option 026.
+.option-026 {
+  @include background-cover;
+  background-image: url("/assets/images/026-background.jpg");
+  font-family: "PT Sans", sans-serif;
+
+  // Link.
+  .link {
+    color: $color-026-purple;
+  }
+
+  // Header.
+  .header {
+    padding-top: 100px;
+  }
+
+  // Form.
+  .form {
+    @include box-shadow-even(50px, $color-026-black, 1.0);
+    background: none !important;
+  }
+
+  // Image.
+  .image {
+    height: 120px;
+    width: 300px;
+  }
+
+  // Field, email.
+  .field-email {
+    padding-top: 20px;
+  }
+
+  // Label.
+  .label {
+    color: $color-026-purple;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    border: solid 2px $color-026-purple;
+    color: $color-026-black;
+
+    // Focus.
+    &:focus {
+      border: solid 2px $color-026-purple;
+      color: $color-026-black;
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+
+    // Box.
+    .label-remember:before {
+      border: solid 2px $color-026-purple;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-026-purple;
+
+      // Before.
+      &:before {
+        border: solid 2px $color-026-purple;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-026-purple;
+      border: solid 2px $color-026-purple;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(6px);
+    background: $color-026-purple;
+    border: solid 1px $color-026-purple;
+    color: $color-026-white;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: $color-026-purple;
+      border: solid 1px $color-026-purple;
+    }
+  }
+
+  // Footer.
+  .footer {
+    color: $color-026-purple;
+  }
+}

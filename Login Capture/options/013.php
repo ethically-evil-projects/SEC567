@@ -3,13 +3,13 @@
 <body class="option option-013 layout-edge panel-right">
   <div class="content">
     <div class="header">
-      <div class="logo">Ice<span class="highlight">Pop</span></div>
+      <div class="logo"><img src="/assets/images/013-logo.png" class="image"></div>
     </div>
 
     <?php include ("../shared/_form.php"); ?>
 
     <div class="footer">
-      <div class="info">All content copyright IcePop <?php echo date("Y") ?></div>
+      <div class="info">Copyright IcePop <?php echo date("Y") ?></div>
     </div>
   </div>
 </body>

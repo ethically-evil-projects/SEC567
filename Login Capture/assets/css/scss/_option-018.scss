@@ -1,0 +1,112 @@
+
+/* ----- OPTION-018.scss ----- */
+
+// Fonts.
+@import "https://fonts.googleapis.com/css?family=Dosis";
+
+// Colors.
+$color-018-gold: #AF982B;
+$color-018-yellow: #F4D438;
+$color-018-black: #000000;
+$color-018-white: #FFFFFF;
+
+// Option 018.
+.option-018 {
+  @include background-cover;
+  background-image: url("/assets/images/018-background.jpg");
+  font-family: "Dosis", sans-serif;
+
+  // Content.
+  .content {
+    background: $color-018-yellow !important;
+  }
+
+  // Link.
+  .link {
+    color: $color-018-gold;
+  }
+
+  // Header.
+  .header {
+    padding: 0 0 30px 0 !important;
+  }
+
+  // Image.
+  .image {
+    height: 250px;
+    width: 250px;
+  }
+
+  // Label.
+  .label {
+    color: $color-018-black;
+  }
+
+  // Inputs, text.
+  .input-email,
+  .input-password {
+    background: $color-018-gold;
+    border: solid 1px $color-018-gold;
+    color: $color-018-black;
+
+    // Focus.
+    &:focus {
+      background: $color-018-gold;
+      border: solid 1px $color-018-gold;
+      color: $color-018-black;
+    }
+  }
+
+  // Field, remember.
+  .field-remember {
+    margin: 0 0 20px 0;
+
+    // Box.
+    .label-remember:before {
+      border: solid 1px $color-018-black;
+    }
+
+    // Hover.
+    .label-remember:hover {
+      color: $color-018-gold;
+
+      // Before.
+      &:before {
+        border: solid 1px $color-018-gold;
+      }
+    }
+
+    // Checked.
+    .input-remember:checked ~ .label-remember:before {
+      background: $color-018-gold;
+      border: solid 1px $color-018-gold;
+    }
+  }
+
+  // Btn.
+  .btn, a.btn, input[type="submit"].btn {
+    @include rounded(4px);
+    background: $color-018-black;
+    border: solid 1px $color-018-black;
+    color: $color-018-yellow;
+    padding: 20px;
+
+    // Hover.
+    &:hover {
+      @include transition-all;
+      background: $color-018-gold;
+      border: solid 1px $color-018-gold;
+    }
+  }
+
+  // Extras.
+  .extras {
+    font-size: $font-size - 1px;
+  }
+
+  // Footer.
+  .footer {
+    color: $color-018-black;
+    font-size: $font-size - 1px;
+  }
+}
